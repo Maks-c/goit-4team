@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'CAVIAR DREAMS';
+    src: local('CAVIAR DREAMS Bold'), local('CAVIAR-DREAMS-Bold'),
+        url('CaviarDreams-Bold.woff2') format('woff2'),
+        url('CaviarDreams-Bold.woff') format('woff'),
+        url('CaviarDreams-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+  }
