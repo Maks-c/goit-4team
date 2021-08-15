@@ -5,3 +5,9 @@ body {
   margin: 0px;
   letter-spacing: 0.03em;
 }
+
+.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
