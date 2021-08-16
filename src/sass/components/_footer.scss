@@ -5,9 +5,11 @@
   box-shadow: 5px 2px 5px 8px rgba(72, 121, 150, 0.1);
 }
 .footer-conteiner {
-  display: block;
-  justify-content: center;
   text-align: center;
+}
+.logo_footer {
+  margin-left: 0 auto;
+  margin-right: 0 auto;
 }
 .footer_nav-list {
   margin-top: 19px;
@@ -69,7 +71,8 @@
 }
 @media screen and (min-width: 768px) {
   .footer {
-    padding: 32px 60px;
+    padding-top: 32px;
+    padding-bottom: 32px;
   }
 
   .footer-conteiner {
@@ -81,10 +84,6 @@
     margin-top: 0;
   }
 
-  .logo-wrapper {
-    position: relative;
-    display: flex;
-  }
   .social-nav {
     text-align: start;
     margin-top: 0;
@@ -116,10 +115,6 @@
     margin-top: 0;
   }
 
-  .logo-wrapper {
-    align-items: flex-start;
-    margin-right: 136px;
-  }
   .social-nav {
     margin-top: 0;
     margin-left: 87px;
