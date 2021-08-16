@@ -82,7 +82,7 @@
   .logo-wrapper {
     position: relative;
     display: flex;
-    justify-content: center;
+    align-items: center;
   }
   .social-nav {
     margin-left: 135px;
@@ -117,5 +117,8 @@
   }
   .footer-address_nav {
     text-align: start;
+  }
+  .footer-address_title:nth(:first-child) {
+    margin-top: 24px;
   }
 }
