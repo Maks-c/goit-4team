@@ -29,7 +29,7 @@
                   srcset="images/printing/prototypes.png 1x, images/printing/prototypes2x.png 2x"
                 />
 
-                <img src="images/printing/prototypes.png" alt="" />
+                <img src="images/printing/prototypes.png" alt="Прототипи" />
               </picture>
             </div>
             <div class="model-examples__text">
@@ -63,7 +63,7 @@
                   srcset="images/printing/layouts.png 1x, images/printing/layouts2x.png 2x"
                 />
 
-                <img src="images/printing/layouts.png" alt="" />
+                <img src="images/printing/layouts.png" alt="Макети" />
               </picture>
             </div>
             <div class="model-examples__text">
@@ -94,10 +94,10 @@
 
                 <source
                   media="(min-width: 320px)"
-                  srcset="images/printing/layouts.png 1x, images/printing/decor2x.png 2x"
+                  srcset="images/printing/decor.png 1x, images/printing/decor2x.png 2x"
                 />
 
-                <img src="images/printing/decor.png" alt="" />
+                <img src="images/printing/decor.png" alt="Декор" />
               </picture>
             </div>
             <div class="model-examples__text">
@@ -129,12 +129,12 @@
                 <source
                   media="(min-width: 320px)"
                   srcset="
-                    images/printing/layouts.png              1x,
+                    images/printing/corporative-design.png   1x,
                     images/printing/corporative-design2x.png 2x
                   "
                 />
 
-                <img src="images/printing/corporative-design.png" alt="" />
+                <img src="images/printing/corporative-design.png" alt="Корпоративний дизайн" />
               </picture>
             </div>
             <div class="model-examples__text">
@@ -146,18 +146,44 @@
     </div>
   </div>
 </section>
-<!-- <section class="section">
+<section class="process-description section">
   <div class="container">
-    <h2 class="is-hidden">ПРОЦЕС 3D СКАНУВАННЯ</h2>
+    <h2 class="visually-hidden">ПРОЦЕС 3D СКАНУВАННЯ</h2>
     <div>
-      <ul>
-        <li>
+      <ul class="list">
+        <li class="process-description__item">
+          <div class="process-description__img-container">
+            <picture>
+              <source
+                media="(min-width: 1444px)"
+                srcset="
+                  images/printing/3d-printing-desktop.png   1x,
+                  images/printing/3d-printing-desktop2x.png 2x
+                "
+              />
+
+              <source
+                media="(min-width: 768px)"
+                srcset="
+                  images/printing/3d-printing-tablet.png   1x,
+                  images/printing/3d-printing-tablet2x.png 2x
+                "
+              />
+
+              <source
+                media="(min-width: 320px)"
+                srcset="images/printing/3d-printing.png 1x, images/printing/3d-printing2x.png 2x"
+              />
+
+              <img src="images/printing/3d-printing.png" alt="3D-друк" />
+            </picture>
+          </div>
           <div>
-            <img src="images/printing/3d-printing.png" alt="" />
-            <div>
+            <div class="process-description__text-container">
               <p>
-                <span>3D-друк</span> - ми використовуємо FDM технологію друку. Вона представляє
-                собою пошарове формування об'єкта за допомогою 3D принтера.
+                <span class="process-description__text-accent">3D-друк</span> - ми використовуємо
+                FDM технологію друку. Вона представляє собою пошарове формування об'єкта за
+                допомогою 3D принтера.
               </p>
               <p>
                 Моделі для створення розроблюються дизайнерами в спеціальному програмному
@@ -168,17 +194,42 @@
                 мистецтві і багатьох інших сфер.
               </p>
             </div>
-            <button type="button">ЗРОБИТИ ЗАМОВЛЕННЯ</button>
+            <a class="process-description__button" href="#">Зробити замовлення</a>
           </div>
         </li>
-        <li>
+        <li class="process-description__item">
+          <div class="process-description__img-container">
+            <picture>
+              <source
+                media="(min-width: 1444px)"
+                srcset="
+                  images/printing/3d-modeling-desktop.png   1x,
+                  images/printing/3d-modeling-desktop2x.png 2x
+                "
+              />
+
+              <source
+                media="(min-width: 768px)"
+                srcset="
+                  images/printing/3d-modeling-tablet.png   1x,
+                  images/printing/3d-modeling-tablet2x.png 2x
+                "
+              />
+
+              <source
+                media="(min-width: 320px)"
+                srcset="images/printing/3d-modeling.png 1x, images/printing/3d-modeling2x.png 2x"
+              />
+
+              <img src="images/printing/3d-modeling.png" alt="3D-моделювання" />
+            </picture>
+          </div>
           <div>
-            <img src="images/printing/3d-modeling.png" alt="" />
-            <div>
+            <div class="process-description__text-container">
               <p>
-                <span>3D-моделювання</span> - це процес розробки математичного уявлення будь-якої
-                поверхні об'єкта в трьох вимірах за допомогою спеціалізованого програмного
-                забезпечення.
+                <span class="process-description__text-accent">3D-моделювання</span> - це процес
+                розробки математичного уявлення будь-якої поверхні об'єкта в трьох вимірах за
+                допомогою спеціалізованого програмного забезпечення.
               </p>
               <p>Наші дизайнери зпроектують будь-який виріб виходячи з ваших побажань.</p>
               <p>
@@ -186,16 +237,41 @@
                 задовольнить ваші потреби.
               </p>
             </div>
-            <button type="button">ЗРОБИТИ ЗАМОВЛЕННЯ</button>
+            <a class="process-description__button" href="#">Зробити замовлення</a>
           </div>
         </li>
-        <li>
-          <div class="hello">
-            <img src="images/printing/3d-scanning.png" alt="" />
-            <div>
+        <li class="process-description__item">
+          <div class="process-description__img-container">
+            <picture>
+              <source
+                media="(min-width: 1444px)"
+                srcset="
+                  images/printing/3d-scanning-desktop.png   1x,
+                  images/printing/3d-scanning-desktop2x.png 2x
+                "
+              />
+
+              <source
+                media="(min-width: 768px)"
+                srcset="
+                  images/printing/3d-scanning-tablet.png   1x,
+                  images/printing/3d-scanning-tablet2x.png 2x
+                "
+              />
+
+              <source
+                media="(min-width: 320px)"
+                srcset="images/printing/3d-scanning.png 1x, images/printing/3d-scanning2x.png 2x"
+              />
+
+              <img src="images/printing/3d-scanning.png" alt="3D-сканування" />
+            </picture>
+          </div>
+          <div>
+            <div class="process-description__text-container">
               <p>
-                <span>3D-сканування</span> - зняття даних, шляхом аналізу форми предмета і на основі
-                отриманих даних створення її 3D-моделі.
+                <span class="process-description__text-accent">3D-сканування</span> - зняття даних,
+                шляхом аналізу форми предмета і на основі отриманих даних створення її 3D-моделі.
               </p>
               <p>
                 Це універсальний інструмент, який дозволяє отримати як і просто 3D-модель для
@@ -203,10 +279,10 @@
                 3D-принтері.
               </p>
             </div>
-            <button type="button">ЗРОБИТИ ЗАМОВЛЕННЯ</button>
+            <a class="process-description__button" href="#">Зробити замовлення</a>
           </div>
         </li>
       </ul>
     </div>
   </div>
-</section> -->
+</section>

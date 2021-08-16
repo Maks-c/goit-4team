@@ -6,8 +6,6 @@ body {
   letter-spacing: 0.03em;
 }
 
-.is-hidden {
-  visibility: hidden;
-  opacity: 0;
-  pointer-events: none;
+.visually-hidden {
+  display: none;
 }
