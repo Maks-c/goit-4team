@@ -31,6 +31,7 @@
   letter-spacing: 0.01em;
   color: var(--prmaty-text-color);
 }
+
 .social_nav-link {
   font-family: var(--prinary-font-family);
   font-style: normal;
@@ -68,13 +69,13 @@
 }
 @media screen and (min-width: 768px) {
   .footer {
-    padding-left: 60px;
-    padding-right: 60px;
+    padding: 32px 60px;
   }
 
   .footer-conteiner {
     display: flex;
     justify-content: space-between;
+    align-items: center;
   }
   .footer-address_title:first-child {
     margin-top: 0;
@@ -83,9 +84,9 @@
   .logo-wrapper {
     position: relative;
     display: flex;
-    align-items: center;
   }
   .social-nav {
+    text-align: start;
     margin-top: 0;
     margin-left: 135px;
     margin-right: 60px;
