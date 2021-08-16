@@ -1,0 +1,110 @@
+.footer {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  background: #f5f5fa;
+  box-shadow: 5px 2px 5px 8px rgba(72, 121, 150, 0.1);
+}
+.footer-conteiner {
+  display: block;
+  justify-content: center;
+  text-align: center;
+}
+.footer_nav-list {
+  margin-top: 19px;
+}
+.footer-address_title {
+  margin-top: 24px;
+}
+.footer_nav-item:not(:last-child) {
+  margin-bottom: 8px;
+}
+.social-nav {
+  margin-top: 24px;
+}
+
+.footer_nav-link {
+  font-family: var(--prinary-font-family);
+
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.01em;
+  color: var(--prmaty-text-color);
+}
+.social_nav-link {
+  font-family: var(--prinary-font-family);
+
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.01em;
+  color: var(--prmaty-text-color);
+}
+
+.social_nav-item:not(:last-child) {
+  margin-bottom: 8px;
+}
+.footer-address_title {
+  font-family: var(--prinary-font-family);
+
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.01em;
+  color: var(--prmaty-text-color);
+}
+.footer-address_link {
+  font-family: var(--primary-font-family);
+
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.25px;
+  text-transform: capitalize;
+  color: var(--secondary-text-color);
+}
+
+.footer-address_item {
+  margin-top: 8px;
+}
+@media screen and (min-width: 768px) {
+  .footer {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+  .footer-conteiner {
+    display: flex;
+    justify-content: space-between;
+  }
+  .social-nav {
+    margin-left: 135px;
+    margin-right: 60px;
+  }
+  .footer_nav-list {
+    text-align: start;
+  }
+  .footer-address_nav {
+    text-align: end;
+  }
+}
+@media screen and (min-width: 1444px) {
+  .footer {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 189px;
+    padding-right: 95px;
+  }
+  .footer-nav {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .social-nav {
+    margin-top: 0;
+    margin-left: 87px;
+    margin-right: 145px;
+  }
+  .footer-address_nav {
+    text-align: start;
+  }
+}

@@ -1,41 +1,102 @@
-<article class="example  container">
-  <h1>HTML-фрагменты</h1>
-<include src="./partials/header.html"></include>
-  <!-- Путь к изображениям из HTML-фрагмента такой, как из файла index.html -->
-  <img src="images/demo.jpg" alt="" width="320" />
-  <p>
-    Плагин
-    <a
-      href="https://github.com/posthtml/posthtml-include"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      posthtml-include
-    </a>
-    позволяет добавлять в HTML-файлы страниц код из других HTML-файлов (фрагментов). Фрагменты
-    хранятся в папке
-    <code>src/partials</code>. Добавление происходит при компиляции файлов страниц, например
-    <code>index.html</code>.
-  </p>
+<!-- секція герой-->
 
-  <p>
-    Этот файл <code>example.html</code> &mdash; пример такого фрагмента, с разметкой определённой
-    части главной страницы. Это очень удобно при командной разработке на студенческих проектах,
-    когда в одном HTML-файле пишет несколько человек сразу.
-  </p>
+<!-- <section class="hero">
+    <div class="container">
+        <h1>Інженерна, конструкторська та дизайнерська робота</h1>
+            <a href="#gallery">
+                <picture>
+                    <source media="(min-width: 1444px)" srcset=".././images/main-img/hero/arrow.jpg 1x, .././images/main-img/hero/arrow@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset=".././images/main-img/hero/arrow-tabl.jpg 1x, .././images/main-img/hero/arrow-tabl@2x.jpg 2x">
+                    <img src=".././images/main-img/hero/arrow.jpg" alt="Ліфт до секції Галерея"/>   
+                </picture>
+            </a>
+        <h2>Ми втілюємо ідеї в реальність</h2>
+    </div>
+</section> -->
 
-  <p>
-    Синтаксис добавление фрагмента в главный файл:
-    <code> &lt;include src="./partials/имя-файла.html"&gt;&lt;/include&gt; </code>
-  </p>
+<!-- секція галерея-->
 
+<section id="gallery" class="gallery">
+    <div class="container">
+        <h2 class="gallery__tittle">ГАЛЕРЕЯ</h2>
+        <ul class="list gallery__list">
+            <li class="gallery__item">
+                <article>
+                    <div class="gallery__thumb">
+                        <picture>
+                            <source media="(min-width: 1444px)"
+                                srcset="./images/main-galery/quality.jpg 1x, ./images/main-galery/quality@2x.jpg 2x">
+                            <source media="(min-width: 768px)"
+                                srcset="./images/main-galery/quality-tabl.jpg 1x, ./images/main-galery/quality-tabl@2x.jpg 2x">
+                            <source media="(min-width: 320px)"
+                                srcset="./images/main-galery/quality-mob.jpg 1x, ./images/main-galery/quality-mob@2x.jpg 2x">
+                            <img src="./images/main-galery/quality.jpg" alt="quality" />
+                        </picture>
+                    </div>
+                    <div class="container--pack">
+                        <h3 class="gallery__title--about">Інженерні методи аналізу та контролю якості</h3>
+                    </div>
+                </article>
+            </li>
 
-  <button class="button" type="button"><a href="#" class="button__link link">Зробити замовлення</a></button>
+            <li class="gallery__item">
+                <article>
+                    <div class="gallery__thumb">
+                        <picture>
+                            <source media="(min-width: 1444px)"
+                                srcset="./images/main-galery/scaning.jpg 1x, ./images/main-galery/scaning@2x.jpg 2x">
+                            <source media="(min-width: 768px)"
+                                srcset="./images/main-galery/scaning-tabl.jpg 1x, ./images/main-galery/scaning-tabl@2x.jpg 2x">
+                            <source media="(min-width: 320px)"
+                                srcset="./images/main-galery/scaning-mob.jpg 1x, ./images/main-galery/scaning-mob@2x.jpg 2x">
+                            <img src="./images/main-galery/scaning.jpg" alt="scaning" />
+                        </picture>
+                    </div>
+                    <div class="container--pack">
+                        <h3 class="gallery__title--about">Високоточне 3D сканування</h3>
+                    </div>
+                </article>
+            </li>
 
+            <li class="gallery__item">
+                <article>
+                    <div class="gallery__thumb">
+                        <picture>
+                            <source media="(min-width: 1444px)"
+                                srcset="./images/main-galery/copy.jpg 1x, ./images/main-galery/copy@2x.jpg 2x">
+                            <source media="(min-width: 768px)"
+                                srcset="./images/main-galery/copy-tabl.jpg 1x, ./images/main-galery/copy-tabl@2x.jpg 2x">
+                            <source media="(min-width: 320px)"
+                                srcset="./images/main-galery/copy-mob.jpg 1x, ./images/main-galery/copy-mob@2x.jpg 2x">
+                            <img src="./images/main-galery/copy.jpg" alt="copy" />
+                        </picture>
+                    </div>    
+                        <div class="container--pack">
+                            <h3 class="gallery__title--about">Створення точної копії на базі сканування reverse engineering</h3>
+                        </div>
+                        
+                </article>
+            </li>
 
-  <div class="background"></div>
+            <li class="gallery__item">
+                <article>
+                    <div class="gallery__thumb">
+                        <picture>
+                            <source media="(min-width: 1444px)"
+                                srcset="./images/main-galery/designing.jpg 1x, ./images/main-galery/designing@2x.jpg 2x">
+                            <source media="(min-width: 768px)"
+                                srcset="./images/main-galery/designing-tabl.jpg 1x, ./images/main-galery/designing-tabl@2x.jpg 2x">
+                            <source media="(min-width: 320px)"
+                                srcset="./images/main-galery/designing-mob.jpg 1x, ./images/main-galery/designing-mob@2x.jpg 2x">
+                            <img src="./images/main-galery/designing.jpg" alt="designing" />
+                        </picture>
+                    </div>
+                    <div class="container--pack">
+                        <h3 class="gallery__title--about">Всі цикли 3D проектування, створення фотореалістичних цифрових моделей</h3>
+                    </div>
+                </article>
+            </li>
+        </ul>
 
-
-  
-  <a href="./contacts.html">scanning</a>
-</article>
+    </div>
+</section>
