@@ -7,10 +7,7 @@
 .footer-conteiner {
   text-align: center;
 }
-.logo_footer {
-  margin-left: 0 auto;
-  margin-right: 0 auto;
-}
+
 .footer_nav-list {
   margin-top: 19px;
 }
@@ -62,7 +59,6 @@
   font-weight: normal;
   font-size: 16px;
   line-height: 1.25px;
-  text-transform: capitalize;
   color: var(--secondary-text-color);
 }
 
@@ -70,11 +66,6 @@
   margin-top: 8px;
 }
 @media screen and (min-width: 768px) {
-  .footer {
-    padding-top: 32px;
-    padding-bottom: 32px;
-  }
-
   .footer-conteiner {
     display: flex;
     justify-content: space-between;
@@ -106,6 +97,7 @@
   }
   .footer-conteiner {
     justify-content: start;
+    align-items: flex-start;
   }
 
   .footer-nav {
