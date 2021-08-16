@@ -1,0 +1,27 @@
+// Тут секция " ми створюемо фотореалыстичны зображення"
+.section-we-made {
+  padding-bottom: 75.85px;
+}
+.our-creative {
+  margin-bottom: 16px;
+  font-family: Cera Pro;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #487996;
+}
+
+.our-made-title {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-right: -5px;
+  margin-bottom: -5px;
+}
+.our-made-title__list {
+  flex-basis: calc((100% - 20px) / 2);
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
