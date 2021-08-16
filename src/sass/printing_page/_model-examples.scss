@@ -1,0 +1,125 @@
+.model-examples {
+  font-family: var(--primary-font-family);
+  margin-top: 34px;
+  margin-bottom: 54px;
+  @media screen and (min-width: 1444px) {
+    margin-bottom: 100px;
+  }
+}
+
+.model-examples__header {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.25;
+  color: #487996;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+  @media screen and (min-width: 768px) {
+    font-size: 36px;
+    margin-bottom: 24px;
+  }
+  @media screen and (min-width: 1444px) {
+    font-size: 48px;
+  }
+}
+
+.model-examples__container {
+  max-width: 300px;
+  margin: 0 auto;
+
+  @media screen and (min-width: 768px) {
+    max-width: 100%;
+  }
+}
+
+.model-examples__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: -15px;
+  margin-left: -15px;
+  justify-content: center;
+  @media screen and (min-width: 768px) {
+    flex-wrap: nowrap;
+  }
+  @media screen and (min-width: 1444px) {
+    margin-top: -21px;
+    margin-left: -21px;
+  }
+}
+
+.model-examples__item {
+  margin-top: 15px;
+  margin-left: 15px;
+  flex-basis: calc((100% - 60px) / 2);
+  @media screen and (min-width: 768px) {
+    flex-basis: calc((100% - 60px) / 4);
+  }
+  @media screen and (min-width: 1444px) {
+    flex-basis: calc((100% - 84px) / 4);
+    margin-top: 21px;
+    margin-left: 21px;
+  }
+}
+
+.model-examples__item-container {
+  position: relative;
+  width: 132px;
+  height: 159px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  @media screen and (min-width: 320px) {
+    width: 100%;
+    height: 174px;
+  }
+  @media screen and (min-width: 768px) {
+    height: 174px;
+  }
+  @media screen and (min-width: 1444px) {
+    height: 298px;
+  }
+}
+
+.model-examples__bg {
+  background: #ffffff;
+  opacity: 0.8;
+  box-shadow: inset 1px 1px 16px rgba(203, 203, 203, 0.8), inset -1px -1px 16px #ffffff;
+  border-radius: 50px 0px;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+}
+
+.model-examples__heading {
+  font-size: 14px;
+  line-height: 1.28;
+  text-align: center;
+  color: #487996;
+  text-transform: uppercase;
+  @media screen and (min-width: 1444px) {
+    font-size: 18px;
+  }
+}
+
+.model-examples__text {
+  height: 36px;
+  @media screen and (min-width: 1444px) {
+    width: 200px;
+  }
+}
+
+.model-examples__img-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 10px;
+  height: 100px;
+  @media screen and (min-width: 768px) {
+    height: 115px;
+  }
+  @media screen and (min-width: 1444px) {
+    height: 200px;
+  }
+}
