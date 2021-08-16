@@ -1,23 +1,7 @@
 body {
-  // background-image: url(../images/decor.png);
   background-color: var(--primary-bg-color);
   color: var(--primary-text-color);
   font-family: var(--prinary-font-family);
   margin: 0px;
   letter-spacing: 0.03em;
-
-  background-image: url(../images/mobile-decor.png);
-  background-repeat: no-repeat;
-
-  @media screen and (min-width: 768px) {
-    background-image: url(../images/secondary.png);
-    // max-width: 768px;
-    height: 100vh;
-  }
-
-  @media screen and (min-width: 1440px) {
-    background-image: url(../images/main.png);
-    max-width: 1440px;
-    height: 100vh;
-  }
 }
