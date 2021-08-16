@@ -1,0 +1,107 @@
+.gallery {
+  @media screen and (min-width: 768px) {
+    padding-top: 0px;
+    padding-right: 53px;
+    padding-bottom: 52px;
+    padding-left: 53px;
+  }
+  @media screen and (min-width: 1444px) {
+    padding-right: 182px;
+    padding-bottom: 100px;
+    padding-left: 182px;
+  }
+}
+.gallery__tittle {
+  font-family: Cera Pro;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 1.25;
+  text-align: left;
+  color: #487996;
+  margin-bottom: 16px;
+  flex-basis: 280px;
+  margin-left: 13px;
+  @media screen and (min-width: 768px) {
+    font-size: 36px;
+    margin-bottom: 32px;
+  }
+  @media screen and (min-width: 1444px) {
+    font-size: 48px;
+    margin-bottom: 52px;
+  }
+}
+.gallery__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-left: -13px;
+  margin-top: -24px;
+  @media screen and (min-width: 768px) {
+    align-items: center;
+    margin-left: -19px;
+    margin-top: -32px;
+  }
+  @media screen and (min-width: 1444px) {
+    margin-left: -32px;
+    margin-top: -56px;
+  }
+}
+.gallery__item {
+  display: flex;
+  flex-direction: column;
+  margin-left: 13px;
+  margin-top: 24px;
+  flex-basis: 280px;
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    flex-basis: calc((100% - 38px) / 2);
+    margin-left: 19px;
+    margin-top: 32px;
+  }
+  @media screen and (min-width: 1444px) {
+    flex-basis: calc((100% - 64px) / 2);
+    margin-left: 32px;
+    margin-top: 56px;
+  }
+}
+
+.container--pack {
+  flex-grow: 1;
+  border: none;
+  max-width: 280px;
+  @media screen and (min-width: 768px) {
+    max-width: 314px;
+  }
+  @media screen and (min-width: 1444px) {
+    max-width: 515px;
+  }
+}
+
+.gallery__title--about {
+  font-family: Cera Pro;
+  font-weight: 300;
+  line-height: 1.2;
+  font-size: 16px;
+  text-align: left;
+  color: rgba(72, 121, 150, 1);
+  margin-top: 8px;
+  @media screen and (min-width: 768px) {
+    margin-top: 16px;
+    text-align: left;
+    text-wrap: wrap;
+  }
+  @media screen and (min-width: 1444px) {
+    margin-top: 18px;
+  }
+}
+
+.gallery__thumb {
+  display: block;
+  overflow: hidden;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
