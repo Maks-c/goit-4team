@@ -33,7 +33,7 @@
 }
 .social_nav-link {
   font-family: var(--prinary-font-family);
-
+  font-style: normal;
   font-weight: normal;
   font-size: 16px;
   line-height: 1.25;
@@ -46,16 +46,16 @@
 }
 .footer-address_title {
   font-family: var(--prinary-font-family);
-
+  font-style: normal;
   font-weight: normal;
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.01em;
-  color: var(--prmaty-text-color);
+  color: var(--primary-text-color);
 }
 .footer-address_link {
   font-family: var(--primary-font-family);
-
+  font-style: normal;
   font-weight: normal;
   font-size: 16px;
   line-height: 1.25px;
@@ -75,6 +75,14 @@
   .footer-conteiner {
     display: flex;
     justify-content: space-between;
+  }
+  .footer-address_title:not(:first-child) {
+    margin-top: 24px;
+  }
+  .logo-wrapper {
+    position: relative;
+    display: flex;
+    justify-content: center;
   }
   .social-nav {
     margin-left: 135px;
@@ -97,7 +105,10 @@
   .footer-nav {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
+  }
+  .logo-wrapper {
+    display: flex;
+    margin-right: 136px;
   }
   .social-nav {
     margin-top: 0;
