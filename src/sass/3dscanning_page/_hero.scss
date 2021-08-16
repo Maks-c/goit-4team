@@ -1,0 +1,31 @@
+.scaning__section-hero {
+    padding-top: 32px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 24px;
+}
+.scaning__section-title {
+   font: var(--primary-font-family);
+   color: var(--secondary-text-color);
+   font-weight: 700;
+   font-style: normal;
+   font-size: 24px;
+   line-height: 1.25; 
+   text-transform: uppercase;
+   margin-bottom: 16px;
+}
+.scaning__section-list-item {
+    font: var(--primary-font-family);
+    color: var(--primary-text-color);
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.25;
+}
+.scaning__section-list-item:not(:last-child) {
+    margin-bottom: 16px;
+}
+.scaning__section-hero-picture {
+    display: block;
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
