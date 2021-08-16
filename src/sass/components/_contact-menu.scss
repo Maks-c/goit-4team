@@ -1,0 +1,33 @@
+.contact-wrapper {
+    position: relative;
+}
+.mobile-contact-menu {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    text-align: center;
+
+    position: absolute;
+    top: 32px;
+    left: 12px;
+    width: 162px;
+    height: 82px;
+    z-index: 10;
+
+    transition: 0.5s ease-in-out;
+    transform: scaleY(0) translateX(-50%);
+    transform-origin: 0 0;
+    
+    background-color: var(--primary-bg-color);
+
+    .contact-wrapper:hover & {
+        transform: scaleY(1) translateX(-50%);
+    }
+}
+.mobile-contact-menu__item:not(:last-child) {
+    margin-bottom: 10px;
+}
+.mobile-contact-menu__link {
+    font-size: 16px;
+    line-height: 1.25;
+    color: var(--primary-text-color);
+}
