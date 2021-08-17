@@ -2,7 +2,7 @@
 
 <section class="hero">
     <div class="container">
-        <h1 class="hero__title">Інженерна, конструкторська та дизайнерська робота</h1>
+        <h1 class="hero__title"> <span class="hero__title--first">Інженерна,</span> <span class="hero__title--second">конструкторська</span> та дизайнерська робота</h1>
         <ul class="hero__list list">
             <li class="hero__item ">
                 <div class="hero__thumb">
@@ -47,7 +47,7 @@
             </li>
             
         </ul>
-            <a href="#gallery" class="hero__svg--arrow">
+            <a href="#gallery" onclick="return anchorScroller(this)"  data-gallery class="hero__svg--arrow">
                 <picture>
                     <source media="(min-width: 1444px)" srcset="./images/main-galery/arrow.svg">
                     <source media="(min-width: 768px)" srcset="./images/main-galery/arrow-tabl.svg">
@@ -56,6 +56,11 @@
             </a>
         <h2 class="hero__title--down">Ми втілюємо ідеї в реальність</h2>
     </div>
+
+
+    
+
+
 </section> 
 
 <!-- секція галерея-->
@@ -143,4 +148,6 @@
         </ul>
 
     </div>
+
+    <script src="js/gallery.js"></script>
 </section>
