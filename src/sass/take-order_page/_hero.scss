@@ -1,11 +1,11 @@
 .button {
-  width: 100%;
+  /* width: 100%; */
   margin: 21px 20px 52px 20px;
   padding: 16px 32px;
   background: #f5f5fa;
   box-shadow: -10px -10px 20px #ffffff, 10px 10px 20px rgba(72, 121, 150, 0.1),
     5px 5px 10px rgba(72, 121, 150, 0.25), -5px -5px 10px #ffffff;
-  border-radius: 30px;
+  border-radius: 30.5px;
   cursor: pointer;
   border: none;
 
@@ -51,7 +51,7 @@
 .hero__page-oder {
   padding-right: 20px;
   padding-left: 20px;
-  background-image: url(../images/take-oder/decor_m.png);
+  background-image: url(../images/take-order/decor_m.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -69,7 +69,14 @@
 .page-oder__form-field {
   margin-bottom: 44px;
 }
+
 .page-oder__form-field-plastic {
+  position: relative;
+}
+.page-oder__form-field-print {
+  position: relative;
+}
+.page-oder__form-field-color {
   position: relative;
 }
 
@@ -79,13 +86,12 @@
   position: absolute;
   bottom: 0px;
   right: 0px;
+  z-index: 999;
   margin-bottom: 3px;
 }
-.page-oder__icon-polygon1:focus .page-oder__color {
+
+.page-oder__color {
   margin-bottom: 44px;
-}
-.hero__page-oder-pic {
-  margin-bottom: 16px;
 }
 
 .hero__page_oder-text1,
@@ -132,13 +138,14 @@
 
   border-bottom: 1px solid var(--secondary-text-color);
 }
+
 .page-oder__content {
+  margin-bottom: 4px;
   font-family: var(--primary-font-family);
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
   line-height: 20px;
-  text-transform: capitalize;
   color: var(--primary-text-color);
 }
 .page-oder__contacts {
@@ -203,14 +210,14 @@
   font-size: 16px;
   line-height: 20px;
   text-transform: capitalize;
-  color: var(--primary-text-color);
+  color: var(--primary-text-color) 2b;
 }
 /* .modal-form__message:focus {
   border-color: var(--accent-color);
   outline: none;
 } */
 /*-Контейнер для обмеження контенту tablet-версії-*/
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1439px) {
   .hero__blok-img {
     display: flex;
   }
@@ -257,7 +264,7 @@
   .hero__page-oder {
     /* padding-right: 20px;
     padding-left: 20px; */
-    background-image: url(../images/take-oder/decor_t.png);
+    background-image: url(../images/take-order/decor_t.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -273,11 +280,12 @@
   }
 }
 /*-Контейнер для обмеження контенту desktop-версії-*/
-@media screen and (min-width: 1444px) {
+@media screen and (min-width: 1440px) {
   .hero__page-oder {
-    /* padding-right: 20px;
-    padding-left: 20px; */
-    background-image: url(../images/take-oder/decor_d.png);
+    padding-right: 189px;
+    padding-left: 189px;
+
+    background-image: url(../images/take-order/decor_d.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -289,10 +297,121 @@
   }
   .hero__page_oder-text1,
   .hero__page_oder-text2 {
+    max-width: 100%;
     font-family: var(--primary-font-family);
     font-style: normal;
     font-weight: 300;
     font-size: 18px;
     line-height: 23px;
+    margin-left: 32px;
+  }
+  /* new one */
+  .hero__blok-img {
+    display: flex;
+    margin-bottom: 100px;
+  }
+  .button {
+    width: 177px;
+    height: 56px;
+  }
+  .page-oder__pic2 {
+    width: 538px;
+    height: 394px;
+    margin-right: 90px;
+    margin-left: 70px;
+    filter: drop-shadow(20px 20px 80px rgba(0, 0, 0, 0.25));
+  }
+  .page-oder__contacts {
+    display: flex;
+    float: right;
+    flex-direction: column;
+    margin-bottom: -50px;
+    margin-right: 189px;
+    text-align: right;
+  }
+  .page-oder__list {
+    display: block;
+  }
+
+  .page-oder__form-section {
+    display: flex;
+
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .hero__item-page-oder {
+    margin-bottom: 24px;
+    font-family: var(--primary-font-family);
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 60px;
+
+    color: var(--secondary-text-color);
+  }
+  .hero__page_oder-text1 {
+    margin-bottom: 24px;
+  }
+  .hero__page_oder-text2 {
+    margin-bottom: 35px;
+  }
+  .page-oder__pic1 {
+    max-width: 100%;
+    margin-bottom: 0;
+  }
+  .container {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .page-oder__conteiner {
+    display: flex;
+    justify-content: space-between;
+  }
+  .page-oder__form {
+    margin-left: 0;
+    width: 515px;
+  }
+  .page-oder__form-item {
+    font-family: var(--primary-font-family);
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 45px;
+
+    color: var(--secondary-text-color);
+  }
+  .button {
+    margin-left: 330px;
+  }
+  .page-oder__contacts-item {
+    margin-bottom: 18px;
+    font-family: var(--primary-font-family);
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 45px;
+    text-align: right;
+
+    color: var(--secondary-text-color);
+  }
+  .page-oder__contacts-list {
+    margin-bottom: 30px;
+  }
+  .page-oder__contacts-phone,
+  .page-oder__contacts-email,
+  .page-oder__contacts-time {
+    font-family: var(--primary-font-family);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 20px;
+    text-align: right;
+    color: var(--primary-text-color);
+  }
+}
+@media screen and (max-width: 1339px) {
+  .page-oder__pic2 {
+    display: none;
   }
 }
