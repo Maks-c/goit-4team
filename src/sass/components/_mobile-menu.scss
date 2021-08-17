@@ -8,8 +8,9 @@
   transform: translate(-50%);
   text-align: center;
   padding-top: 44px;
-  width: 280px;
-  height: auto;
+  width: 100vw;
+  height: 100vh;
+  z-index: 100;
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
@@ -17,9 +18,7 @@
 
   background-color: var(--primary-bg-color);
 
-  @media screen and (min-width: 768px) {
-    width: 380px;
-  }
+
 }
 .mobile-menu.is-open {
   opacity: 1;

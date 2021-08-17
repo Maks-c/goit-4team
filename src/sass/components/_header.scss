@@ -36,7 +36,7 @@
     align-items: center;
     justify-content: space-between;
 }
-.logo {
+.header__logo {
     animation-duration: 2000ms;
     @media screen and (min-width: 1440px) {
         margin-right: 213px;
@@ -170,12 +170,14 @@
     border-bottom: 20px solid var(--primary-bg-color);
     border-left: 15px solid rgba(255, 255, 255, 0); 
     border-right: 15px solid rgba(255, 255, 255, 0);
-    display: none;
-    
+    opacity: 0;
+    transition: opacity 250ms ease-in-out;
+
+    .contact-wrapper:hover & {
+        opacity: 1;
+    }
 }
-.contact-btn:active .contact-btn::after {
-    display: block;
-}
+
 
 
 
