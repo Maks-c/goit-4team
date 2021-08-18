@@ -70,3 +70,35 @@
         padding-right: 0px;        
     }
 }
+@media screen and (min-width: 1440px) {
+    .scaning__section-process {
+        padding-left: 174px;
+        padding-right: 174px;
+    }
+    .scaning__section-process-title {
+        font-size: 36px;
+        line-height: 1.25; 
+        margin-bottom: 52px;
+     }
+    .scanning__process-list {
+        display: flex;
+        margin-top: 0px;
+        margin-left: 0px;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+    .scanning__process-list-item {
+        max-width: 250px;
+        height: 298px;
+        margin: 0px;
+        padding-left: 0px;
+        padding-right: 0px;       
+    }
+.scaning__process-list-text {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 1.28;
+    padding-left: 30px;
+    padding-right: 30px;
+    }
+}
