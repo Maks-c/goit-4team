@@ -21,7 +21,7 @@
     font-size: 16px;
     line-height: 1.25;
 }
-.scaning__section-list-item:not(:last-child) {
+.scaning__section-list-item:not(:nth-child(3)) {
     margin-bottom: 16px;
 }
 .scaning__section-hero-picture {
@@ -29,32 +29,31 @@
     margin-top: 24px;
     margin-bottom: 24px;
 }
-
 @media screen and (min-width: 768px) and (max-width: 1443px) {
     .scaning__section-hero {
         padding-top: 35px;
-        padding-left: 53px;
-        padding-right: 187px;
+        padding-left: 50px;
+        padding-right: 184px;
         margin-bottom: 52px;
     }
     .scaning__section-title {
-       font-size: 36px;       
+       font-size: 36px;   
     }
-    .container__scaning-section-hero {
-        position: relative;
+    .scaning__section-list-item_tb {
+        padding-right: 20px;
     }
     .scaning__section-hero-picture {
         position: absolute;
         width: 241px;
         height: 172px;
-        bottom: 25px;
-        left: 475px;
+        top: 279px;
+        right: -8px;
         z-index: -1;
         margin-top: 0px;
         margin-bottom: 0px;
     }
 }
-@media screen and (min-width: 1444px) {
+@media screen and (min-width: 1440px) {
     .scaning__section-hero {
         padding-top: 85px;
         padding-left: 182px;
@@ -62,19 +61,32 @@
         margin-bottom: 52px;
     }
     .scaning__section-title {
-       font-size: 36px;       
-    }
-    .container__scaning-section-hero {
-        position: relative;
+       font-size: 48px;
+       margin-bottom: 24px;       
     }
     .scaning__section-hero-picture {
-        position: absolute;
-        width: 241px;
-        height: 172px;
-        bottom: 25px;
-        left: 475px;
-        z-index: -1;
-        margin-top: 0px;
-        margin-bottom: 0px;
+position: static;
+width: 515px;
+height: 368px;
+    }
+    .container__scaning-section-list {
+        width: 1062px;
+        height: 400px;
+    }
+    .scaning__section-list {
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: space-between;
+        align-items: stretch;
+    }
+    .scaning__section-list-item_tb {
+        padding-right: 0px;
+    }
+    .scaning__section-list-item {
+        display: block;
+        max-width: 515px;
+        margin-bottom: 24px;
+        font-size: 18px;
+        line-height: 1.28;
     }
 }
