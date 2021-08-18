@@ -1,0 +1,13 @@
+.bg-main-page {
+    background-image: url("../images/decor_m-min.png");
+    background-size: contain;
+
+    @media screen and (min-width: 768px) {
+        background-image: url("../images/decor_t-min.png");
+        background-size: cover;
+    }
+
+    @media screen and (min-width: 1440px) {
+        background-image: url("../images/decor_d-min.png");
+    }
+}
