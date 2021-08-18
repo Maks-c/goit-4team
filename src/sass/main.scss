@@ -17,11 +17,21 @@
 @import './components/main-button';
 @import './components/container';
 @import './components/bg-main';
+
+
+@import './components/bg-contact';
+@import './components/bg-modeling';
+@import './components/bg-printing';
+@import './components/bg-scanning';
+@import './components/bg-take-order';
+@import './components/contact-menu';
+
 @import './3dmodeling_page/hero';
 @import './3dmodeling_page/methods-of-creations';
 @import './3dmodeling_page/order-form-button';
 @import './3dmodeling_page/we-creat-model';
 @import './3dprinting_page/model-examples';
+@import './3dprinting_page/printing-page';
 @import './3dprinting_page/process-description';
 @import './3dscanning_page/hero';
 @import './3dscanning_page/order-form-button';

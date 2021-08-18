@@ -1,3 +1,13 @@
+.header {
+    background-image: url("../images/decor_m-min.png");
+    background-size: cover;
+    @media screen and (min-width: 768px) {
+        background-image: url("../images/decor_t-min.png");
+    }
+    @media screen and (min-width: 1440px) {
+        background-image: url("../images/decor_d-min.png");
+    }
+}
 .header-container {
     display: flex;
     align-items: center;
@@ -48,15 +58,7 @@
         display: flex;
     }
 }
-.burger-menu-wrapper {
-    @media screen and (min-width: 768px) {
-        margin-left: 174px;
-        margin-right: 73px;
-    }
-    @media screen and (min-width: 1440px) {
-        display: none;
-    }
-}
+
 .header__nav-item:not(:last-child) {
     margin-right: 54px;
 }
@@ -106,6 +108,10 @@
     transition: color 250ms ease-in;
     color: var(--primary-text-color);
 
+
+    transition: color 250ms ease-in;
+
+
         &:hover,
         &:focus {
             color: var(--accent-color);
@@ -119,12 +125,28 @@
     color: var(--primary-text-color);
     transition: color 250ms ease-in;
 
+
     &:hover,
     &:focus {
         color: var(--accent-color);
     }
 }
 
+
+        &:hover,
+        &:focus {
+            color: var(--accent-color);
+        }
+}
+.burger-menu-wrapper {
+    @media screen and (min-width: 768px) {
+        margin-left: 174px;
+        margin-right: 73px;
+    }
+    @media screen and (min-width: 1440px) {
+        display: none;
+    }
+}
 .header__contact-list {
     animation-duration: 2000ms;
     @media screen and (max-width: 767px) {
@@ -146,13 +168,17 @@
     letter-spacing: 0.01em;
     transition: color 250ms ease-in;
     color: var(--primary-text-color);
-    &-icon {
-        margin-right: 4px;
-    }
-    &:hover,
-    &:focus {
-        color: var(--accent-color);
-    }
+
+    transition: color 250ms ease-in;
+
+        &-icon {
+            margin-right: 4px;
+        }
+        &:hover,
+        &:focus {
+            color: var(--accent-color);
+        }
+
 }
 .burger {
     @media screen and (min-width: 768px) {
@@ -192,7 +218,9 @@
 }
 .lang-wrapper {
     position: relative;
-    z-index: 150;
+
+    z-index: 110;
+
     @media screen and (min-width: 768px) {
      margin-right: 28px;
     }
@@ -211,7 +239,6 @@
         transform: scaleY(1);
     }
 }
-
 .header__lang-link {
     font-family: var(--secondary-font-family);
     font-size: 14px;
