@@ -21,8 +21,11 @@
     font-size: 16px;
     line-height: 1.25;
 }
-.scaning__section-list-item:not(:nth-child(3)) {
+.scaning__section-list-item {
     margin-bottom: 16px;
+    &:not(:last-child) {
+        margin-bottom: 16px;
+    }
 }
 .scaning__section-hero-picture {
     display: block;
@@ -39,7 +42,7 @@
     .scaning__section-title {
        font-size: 36px;   
     }
-    .scaning__section-list-item_tb {
+    .scaning__section-list-item:not(:first-child) {
         padding-right: 20px;
     }
     .scaning__section-hero-picture {
@@ -55,38 +58,52 @@
 }
 @media screen and (min-width: 1440px) {
     .scaning__section-hero {
-        padding-top: 85px;
-        padding-left: 182px;
-        padding-right: 182px;
-        margin-bottom: 52px;
+        padding-top: 45px;
+        padding-left: 174px;
+        padding-right: 174px;
+        margin-bottom: 100px;
     }
     .scaning__section-title {
        font-size: 48px;
        margin-bottom: 24px;       
     }
     .scaning__section-hero-picture {
-position: static;
+position: absolute;
 width: 515px;
 height: 368px;
+top: 291px;
+left: 50vw;
     }
-    .container__scaning-section-list {
-        width: 1062px;
-        height: 400px;
-    }
-    .scaning__section-list {
+.container__scaning__section-list {
+height: 300px;
+margin: 0 auto;
+}
+.scaning__section-list {
         display: flex;
         flex-flow: column wrap;
         justify-content: space-between;
-        align-items: stretch;
+        align-content: space-between;
     }
-    .scaning__section-list-item_tb {
-        padding-right: 0px;
-    }
+.scaning__section-list-item:not(:first-child) {
+    padding-right: 0px;
+    margin: 0px;
+}
     .scaning__section-list-item {
         display: block;
         max-width: 515px;
-        margin-bottom: 24px;
-        font-size: 18px;
+       font-size: 18px;
         line-height: 1.28;
+        margin: 0px;        
+            &:first-child
+            {margin-bottom: 24px;}
+            &:nth-child(2) {
+                margin-bottom: 0px;
+            }
+            &:last-child {         
+            margin-left: 32px;
+            }
     }
+.scaning__section-list-item_dt {
+    padding-right: 250px;
+}
 }
