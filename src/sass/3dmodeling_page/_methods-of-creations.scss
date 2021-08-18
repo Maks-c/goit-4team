@@ -37,13 +37,13 @@ ul {
   @media screen and (min-width: 768px) {
     padding: 0px;
     position: absolute;
-    bottom: 0px;
-    left: 0px;
+    bottom: 53px;
+    z-index: -1;
+    left: 443px;
   }
   @media screen and (min-width: 1440px) {
-    position: absolute;
     bottom: 0px;
-    left: 0px;
+    right: 189px;
   }
 }
 .box-for-ul {
