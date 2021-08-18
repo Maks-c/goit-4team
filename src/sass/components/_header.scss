@@ -1,3 +1,13 @@
+.header {
+    background-image: url("../images/decor_m-min.png");
+    background-size: cover;
+    @media screen and (min-width: 768px) {
+        background-image: url("../images/decor_t-min.png");
+    }
+    @media screen and (min-width: 1440px) {
+        background-image: url("../images/decor_d-min.png");
+    }
+}
 .header-container {
     display: flex;
     align-items: center;
@@ -43,6 +53,7 @@
     }
 }
 .header__nav-list {
+    animation-duration: 2000ms;
     @media screen and (max-width: 1439px) {
         display: none;
     }
@@ -50,15 +61,7 @@
         display: flex;
     }
 }
-.burger-menu-wrapper {
-    @media screen and (min-width: 768px) {
-        margin-left: 174px;
-        margin-right: 73px;
-    }
-    @media screen and (min-width: 1440px) {
-        display: none;
-    }
-}
+
 .header__nav-item:not(:last-child) {
     margin-right: 54px;
 }
@@ -107,6 +110,12 @@
     line-height: 1.19;
     letter-spacing: 0.01em;
     color: var(--primary-text-color);
+    transition: color 250ms ease-in;
+
+        &:hover,
+        &:focus {
+            color: var(--accent-color);
+        }
 }
 .header__nav-link {
     font-family: var(--secondary-font-family);
@@ -114,9 +123,24 @@
     line-height: 1.17;
     letter-spacing: 0.01em;
     color: var(--primary-text-color);
-}
+    transition: color 250ms ease-in;
 
+        &:hover,
+        &:focus {
+            color: var(--accent-color);
+        }
+}
+.burger-menu-wrapper {
+    @media screen and (min-width: 768px) {
+        margin-left: 174px;
+        margin-right: 73px;
+    }
+    @media screen and (min-width: 1440px) {
+        display: none;
+    }
+}
 .header__contact-list {
+    animation-duration: 2000ms;
     @media screen and (max-width: 767px) {
         display: none;
     }
@@ -135,9 +159,15 @@
     line-height: 1.25;
     letter-spacing: 0.01em;
     color: var(--primary-text-color);
-    &-icon {
-        margin-right: 4px;
-    }
+    transition: color 250ms ease-in;
+
+        &-icon {
+            margin-right: 4px;
+        }
+        &:hover,
+        &:focus {
+            color: var(--accent-color);
+        }
 }
 .burger {
     @media screen and (min-width: 768px) {
@@ -170,16 +200,14 @@
     opacity: 0;
     transition: opacity 250ms ease-in-out;
 
-    .contact-wrapper:hover & {
+    .contact-wrapper:hover,
+    .contact-wrapper:focus & {
         opacity: 1;
     }
 }
-
-
-
-
 .lang-wrapper {
     position: relative;
+    z-index: 110;
     @media screen and (min-width: 768px) {
      margin-right: 28px;
     }
@@ -197,7 +225,6 @@
         transform: scaleY(1);
     }
 }
-
 .header__lang-link {
     font-family: var(--secondary-font-family);
     font-size: 14px;

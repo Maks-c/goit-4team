@@ -19,9 +19,9 @@
     
     background-color: var(--primary-bg-color);
 
-    .contact-wrapper:hover & {
-        transform: scaleY(1) translateX(-50%);
-    }
+        .contact-wrapper:hover & {
+            transform: scaleY(1) translateX(-50%);
+        }
 }
 .mobile-contact-menu__item:not(:last-child) {
     margin-bottom: 10px;
