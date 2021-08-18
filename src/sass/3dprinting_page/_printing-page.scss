@@ -1,0 +1,36 @@
+.bg-3dprinting-page {
+  background-image: url('/images/printing/bg.png');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  top: 0;
+  left: 0;
+
+  @media (min-device-pixel-ratio: 2) and (min-width: 280px),
+    (min-resolution: 192dpi) and (min-width: 280px),
+    (min-resolution: 2dppx) and (min-resolution: 280px) {
+    background-image: url('/images/printing/bg2x.png');
+  }
+
+  @media screen and (min-width: 768px) {
+    background-image: url('/images/printing/bg-tablet.png');
+  }
+
+  @media (min-device-pixel-ratio: 2) and (min-width: 768px),
+    (min-resolution: 192dpi) and (min-width: 768px),
+    (min-resolution: 2dppx) and (min-resolution: 768px) {
+    background-image: url('/images/printing/bg-tablet2x.png');
+  }
+
+  @media screen and (min-width: 1444px) {
+    background-image: url('/images/printing/bg-desktop.png');
+  }
+
+  @media (min-device-pixel-ratio: 2) and (min-width: 1444px),
+    (min-resolution: 192dpi) and (min-width: 1444px),
+    (min-resolution: 2dppx) and (min-resolution: 1444px) {
+    background-image: url('/images/printing/bg-desktop2x.png');
+  }
+}
