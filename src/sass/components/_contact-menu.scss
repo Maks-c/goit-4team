@@ -19,7 +19,8 @@
     
     background-color: var(--primary-bg-color);
 
-    .contact-wrapper:hover & {
+    .contact-wrapper:hover,
+    .contact-wrapper:focus & {
         transform: scaleY(1) translateX(-50%);
     }
 }

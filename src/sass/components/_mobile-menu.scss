@@ -17,7 +17,38 @@
   transition: top 500ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
 
   background-color: var(--primary-bg-color);
+  
+  background-image: url("../images/decor_m-min.png");
+    background-size: cover;
+    background-position: 0px -55px;
 
+    @media (min-device-pixel-ratio: 2) and (min-width: 280px),
+    (min-resolution: 192dpi) and (min-width: 280px),
+    (min-resolution: 2dppx) and (min-resolution: 280px) {
+    background-image: url('../images/decor_m-2x-min.png');
+  }
+
+    @media screen and (min-width: 768px) {
+        background-image: url("../images/decor_t-min.png");
+        background-size: cover;
+        background-position: 0px -70px;
+    }
+
+    @media (min-device-pixel-ratio: 2) and (min-width: 768px),
+    (min-resolution: 192dpi) and (min-width: 768px),
+    (min-resolution: 2dppx) and (min-resolution: 768px) {
+    background-image: url('../images/decor_t-2x-min.png');
+  }
+
+    @media screen and (min-width: 1440px) {
+        background-image: url("../images/decor_d-min.png");
+    }
+
+    @media (min-device-pixel-ratio: 2) and (min-width: 1444px),
+    (min-resolution: 192dpi) and (min-width: 1444px),
+    (min-resolution: 2dppx) and (min-resolution: 1444px) {
+    background-image: url('../images/decor_d-2x-min.png');
+  }
 
 }
 .mobile-menu.is-open {
@@ -46,7 +77,8 @@
 
 
   color: var(--secondary-text-color);
-    &:hover {
+    &:hover,
+    &:focus {
       color: var(--accent-color);
     }
 }
@@ -69,7 +101,8 @@
 
   color: var(--secondary-text-color);
 
-    &:hover {
+    &:hover,
+    &:focus {
       color:var(--accent-color);
     }
 }
@@ -82,8 +115,8 @@
   height: 7px;
   background-color: var(--secondary-text-color);
   border-radius: 3px 0px;
-
-  .mobile-menu__services-link:hover & {
-    background-color: var(--accent-color);
-  }
+  transition: background-color 250ms ease-in;
+}
+.mobile-menu__services-link:hover::before {
+  background-color: var(--accent-color);
 }

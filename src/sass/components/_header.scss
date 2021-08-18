@@ -9,9 +9,6 @@
     padding-left: 20px;
     padding-right: 20px;
     
-    @media screen and (max-width: 320px) {
-        max-width: 278px;
-    }
     @media screen and (min-width: 450px) {
         padding-left: 20px;
         padding-right: 20px;
@@ -43,6 +40,7 @@
     }
 }
 .header__nav-list {
+    animation-duration: 2000ms;
     @media screen and (max-width: 1439px) {
         display: none;
     }
@@ -65,7 +63,6 @@
 .submenu {
     position: relative;
 }
-
 .nav-wrapper {
     position: absolute;
     top: 25px;
@@ -106,7 +103,13 @@
     font-size: 16px;
     line-height: 1.19;
     letter-spacing: 0.01em;
+    transition: color 250ms ease-in;
     color: var(--primary-text-color);
+
+        &:hover,
+        &:focus {
+            color: var(--accent-color);
+        }
 }
 .header__nav-link {
     font-family: var(--secondary-font-family);
@@ -114,9 +117,16 @@
     line-height: 1.17;
     letter-spacing: 0.01em;
     color: var(--primary-text-color);
+    transition: color 250ms ease-in;
+
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }
 }
 
 .header__contact-list {
+    animation-duration: 2000ms;
     @media screen and (max-width: 767px) {
         display: none;
     }
@@ -134,9 +144,14 @@
     font-size: 16px;
     line-height: 1.25;
     letter-spacing: 0.01em;
+    transition: color 250ms ease-in;
     color: var(--primary-text-color);
     &-icon {
         margin-right: 4px;
+    }
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
     }
 }
 .burger {
@@ -170,16 +185,14 @@
     opacity: 0;
     transition: opacity 250ms ease-in-out;
 
-    .contact-wrapper:hover & {
+    .contact-wrapper:hover,
+    .contact-wrapper:focus & {
         opacity: 1;
     }
 }
-
-
-
-
 .lang-wrapper {
     position: relative;
+    z-index: 150;
     @media screen and (min-width: 768px) {
      margin-right: 28px;
     }
@@ -193,6 +206,7 @@
     transition: 0.5s ease-in-out;
     transform: scaleY(0);
     transform-origin: 0 0;
+
     .lang-wrapper:hover & {
         transform: scaleY(1);
     }
