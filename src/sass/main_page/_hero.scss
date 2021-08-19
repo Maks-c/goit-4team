@@ -68,11 +68,11 @@
     visibility: visible;
     opacity: 1;
     position: absolute;
-    left: 90px;
+    left: 150px;
     transition: transform 1250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   @media screen and (min-width: 1440px) {
-    left: 120px;
+    left: 200px;
     transition: transform 1250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
