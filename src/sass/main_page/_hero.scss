@@ -76,6 +76,11 @@
     transition: transform 1250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
+.hero__svg--arrow:hover,
+.hero__svg--arrow:focus {
+  transform: scale(1.7);
+  transition: transform 780ms cubic-bezier(0.27, 0.51, 0.55, 0.61);
+}
 .hero__list {
   display: flex;
   justify-content: center;
