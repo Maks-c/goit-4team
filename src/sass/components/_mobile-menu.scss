@@ -15,54 +15,51 @@
 
   background-color: var(--primary-bg-color);
 
-  
-  background-image: url("../images/decor_m-min.png");
-    background-size: cover;
-    background-position: 0px -55px;
+  background-image: url('../images/decor_m-min.png');
+  background-size: cover;
+  background-position: 0px -55px;
 
-    @media (min-device-pixel-ratio: 2) and (min-width: 280px),
+  @media (min-device-pixel-ratio: 2) and (min-width: 280px),
     (min-resolution: 192dpi) and (min-width: 280px),
     (min-resolution: 2dppx) and (min-resolution: 280px) {
     background-image: url('../images/decor_m-2x-min.png');
   }
 
-    @media screen and (min-width: 768px) {
-        background-image: url("../images/decor_t-min.png");
-        background-size: cover;
-        background-position: 0px -70px;
-    }
+  @media screen and (min-width: 768px) {
+    background-image: url('../images/decor_t-min.png');
+    background-size: cover;
+    background-position: 0px -70px;
+  }
 
-    @media (min-device-pixel-ratio: 2) and (min-width: 768px),
+  @media (min-device-pixel-ratio: 2) and (min-width: 768px),
     (min-resolution: 192dpi) and (min-width: 768px),
     (min-resolution: 2dppx) and (min-resolution: 768px) {
     background-image: url('../images/decor_t-2x-min.png');
   }
 
-    @media screen and (min-width: 1440px) {
-        background-image: url("../images/decor_d-min.png");
-    }
+  @media screen and (min-width: 1440px) {
+    background-image: url('../images/decor_d-min.png');
+  }
 
-    @media (min-device-pixel-ratio: 2) and (min-width: 1444px),
+  @media (min-device-pixel-ratio: 2) and (min-width: 1444px),
     (min-resolution: 192dpi) and (min-width: 1444px),
     (min-resolution: 2dppx) and (min-resolution: 1444px) {
     background-image: url('../images/decor_d-2x-min.png');
   }
 
-}
-
-  background-image: url("../images/decor_m-min.png");
+  background-image: url('../images/decor_m-min.png');
   background-size: cover;
   background-position: 0px -56px;
   background-size: cover;
 
-    @media screen and (min-width: 768px) {
-      background-image: url("../images/decor_t-min.png");
-      background-position: 0px -72px;
-    }
-    @media screen and (min-width: 1440px) {
-      display: none;
-    }
+  @media screen and (min-width: 768px) {
+    background-image: url('../images/decor_t-min.png');
+    background-position: 0px -72px;
   }
+  @media screen and (min-width: 1440px) {
+    display: none;
+  }
+}
 
 .mobile-menu.is-open {
   opacity: 1;
@@ -88,22 +85,21 @@
   line-height: 1.25;
   transition: color 250ms ease-in;
 
+  color: var(--secondary-text-color);
 
-    color: var(--secondary-text-color);
-
-    &:hover,
-    &:focus {
-      color: var(--accent-color);
-    }
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 .current {
   -webkit-text-stroke: 1px var(--secondary-text-color);
   -webkit-text-fill-color: var(--primary-bg-color);
 }
 .mobile-menu__services-item {
-    &:not(:last-child) {
-      margin-bottom: 24px;
-    }
+  &:not(:last-child) {
+    margin-bottom: 24px;
+  }
 }
 .mobile-menu__services-link {
   position: relative;
@@ -115,10 +111,10 @@
 
   color: var(--secondary-text-color);
 
-    &:hover,
-    &:focus {
-      color:var(--accent-color);
-    }
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 .mobile-menu__services-link::before {
   content: ' ';
