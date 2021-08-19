@@ -95,7 +95,18 @@
 .is-active {
   transform: rotate(180deg);
 }
-
+.nav-decor {
+  width: 300px;
+  position: absolute;
+  top: -40px;
+  left: -100px;
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 250ms ease-in;
+}
+.arrow.is-active ~ .nav-decor {
+  opacity: 1;
+}
 .nav-wrapper__item:not(:last-child) {
   margin-bottom: 6px;
 }
