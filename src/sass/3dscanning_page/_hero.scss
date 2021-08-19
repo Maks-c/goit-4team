@@ -1,109 +1,110 @@
 .scaning__section-hero {
-    padding-top: 32px;
-    padding-left: 13px;
-    padding-right: 13px;
-    margin-bottom: 24px;
+  padding-top: 32px;
+  padding-left: 13px;
+  padding-right: 13px;
+  margin-bottom: 24px;
 }
 .scaning__section-title {
-    font-family: var(--primary-font-family);
-   color: var(--secondary-text-color);
-   font-weight: 700;
-   font-style: normal;
-   font-size: 24px;
-   line-height: 1.25; 
-   text-transform: uppercase;
-   margin-bottom: 16px;
+  font-family: var(--primary-font-family);
+  color: var(--secondary-text-color);
+  font-weight: 700;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1.25;
+  text-transform: uppercase;
+  margin-bottom: 16px;
 }
 .scaning__section-list-item {
-    font-family: var(--primary-font-family);
-    color: var(--primary-text-color);
-    font-weight: 300;
-    font-size: 16px;
-    line-height: 1.25;
+  font-family: var(--primary-font-family);
+  color: var(--primary-text-color);
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.25;
 }
 .scaning__section-list-item {
+  margin-bottom: 16px;
+  &:not(:last-child) {
     margin-bottom: 16px;
-    &:not(:last-child) {
-        margin-bottom: 16px;
-    }
+  }
 }
 .scaning__section-hero-picture {
-    display: block;
-    margin-top: 24px;
-    margin-bottom: 24px;
+  display: block;
+  margin-top: 24px;
+  margin-bottom: 24px;
 }
 @media screen and (min-width: 768px) and (max-width: 1443px) {
-    .scaning__section-hero {
-        padding-top: 35px;
-        padding-left: 50px;
-        padding-right: 184px;
-        margin-bottom: 52px;
-    }
-    .scaning__section-title {
-       font-size: 36px;   
-    }
-    .scaning__section-list-item:not(:first-child) {
-        padding-right: 20px;
-    }
-    .scaning__section-hero-picture {
-        position: absolute;
-        width: 241px;
-        height: 172px;
-        top: 279px;
-        right: -8px;
-        z-index: -1;
-        margin-top: 0px;
-        margin-bottom: 0px;
-    }
+  .scaning__section-hero {
+    padding-top: 35px;
+    padding-left: 50px;
+    padding-right: 184px;
+    margin-bottom: 52px;
+  }
+  .scaning__section-title {
+    font-size: 36px;
+  }
+  .scaning__section-list-item:not(:first-child) {
+    padding-right: 20px;
+  }
+  .scaning__section-hero-picture {
+    position: absolute;
+    width: 241px;
+    height: 172px;
+    top: 357px;
+    right: -8px;
+    z-index: -1;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
 }
 @media screen and (min-width: 1440px) {
-    .scaning__section-hero {
-        padding-top: 45px;
-        padding-left: 174px;
-        padding-right: 174px;
-        margin-bottom: 100px;
-    }
-    .scaning__section-title {
-       font-size: 48px;
-       margin-bottom: 24px;       
-    }
-    .scaning__section-hero-picture {
-position: absolute;
-width: 515px;
-height: 368px;
-top: 291px;
-left: 50vw;
-    }
-.container__scaning__section-list {
-height: 300px;
-margin: 0 auto;
-}
-.scaning__section-list {
-        display: flex;
-        flex-flow: column wrap;
-        justify-content: space-between;
-        align-content: space-between;
-    }
-.scaning__section-list-item:not(:first-child) {
+  .scaning__section-hero {
+    padding-top: 45px;
+    padding-left: 174px;
+    padding-right: 174px;
+    margin-bottom: 100px;
+  }
+  .scaning__section-title {
+    font-size: 48px;
+    margin-bottom: 24px;
+  }
+  .scaning__section-hero-picture {
+    position: absolute;
+    width: 515px;
+    height: 368px;
+    top: 307px;
+    left: 61vw;
+  }
+  .container__scaning__section-list {
+    height: 300px;
+    margin: 0 auto;
+  }
+  .scaning__section-list {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    align-content: space-between;
+  }
+  .scaning__section-list-item:not(:first-child) {
     padding-right: 0px;
     margin: 0px;
-}
-    .scaning__section-list-item {
-        display: block;
-        max-width: 515px;
-       font-size: 18px;
-        line-height: 1.28;
-        margin: 0px;        
-            &:first-child
-            {margin-bottom: 24px;}
-            &:nth-child(2) {
-                margin-bottom: 0px;
-            }
-            &:last-child {         
-            margin-left: 32px;
-            }
+  }
+  .scaning__section-list-item {
+    display: block;
+    max-width: 515px;
+    font-size: 18px;
+    line-height: 1.28;
+    margin: 0px;
+    &:first-child {
+      margin-bottom: 24px;
     }
-.scaning__section-list-item_dt {
+    &:nth-child(2) {
+      margin-bottom: 0px;
+    }
+    &:last-child {
+      margin-left: 32px;
+    }
+  }
+  .scaning__section-list-item_dt {
     padding-right: 250px;
-}
+  }
 }
