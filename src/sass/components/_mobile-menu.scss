@@ -17,7 +17,7 @@
 
   background-image: url('../images/decor_m-min.png');
   background-size: cover;
-  background-position: 0px -55px;
+  background-position: 0px -54px;
 
   @media (min-device-pixel-ratio: 2) and (min-width: 280px),
     (min-resolution: 192dpi) and (min-width: 280px),
@@ -27,7 +27,6 @@
 
   @media screen and (min-width: 768px) {
     background-image: url('../images/decor_t-min.png');
-    background-size: cover;
     background-position: 0px -70px;
   }
 
@@ -49,7 +48,7 @@
 
   background-image: url('../images/decor_m-min.png');
   background-size: cover;
-  background-position: 0px -56px;
+  background-position: 0px -54px;
   background-size: cover;
 
   @media screen and (min-width: 768px) {
