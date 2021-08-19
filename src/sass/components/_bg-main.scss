@@ -1,1 +1,35 @@
+.bg-main-page {
+  background-image: url('/images/main-galery/main_decor-mob.png');
+  background-size: 100% 100%;
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  top: 0;
+  left: 0;
 
+  @media (min-device-pixel-ratio: 2) and (min-width: 320px),
+    (min-resolution: 192dpi) and (min-width: 320px),
+    (min-resolution: 2dppx) and (min-resolution: 320px) {
+    background-image: url('/images/main-galery/main_decor2x-mob.png');
+  }
+
+  @media screen and (min-width: 768px) {
+    background-image: url('/images/main-galery/main_decor-tabl.png');
+  }
+
+  @media (min-device-pixel-ratio: 2) and (min-width: 768px),
+    (min-resolution: 192dpi) and (min-width: 768px),
+    (min-resolution: 2dppx) and (min-resolution: 768px) {
+    background-image: url('/images/main-galery/main_decor2x-tabl.png');
+  }
+
+  @media screen and (min-width: 1444px) {
+    background-image: url('/images/main-galery/main_decor.png');
+  }
+
+  @media (min-device-pixel-ratio: 2) and (min-width: 1444px),
+    (min-resolution: 192dpi) and (min-width: 1444px),
+    (min-resolution: 2dppx) and (min-resolution: 1444px) {
+    background-image: url('/images/main-galery/main_decor2x.png');
+  }
+}
