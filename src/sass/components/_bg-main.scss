@@ -1,3 +1,12 @@
+.bg-main-page {
+  background-image: url('/images/main-galery/main_decor-mob.png');
+  background-size: 100% 100%;
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  top: 0;
+  left: 0;
+
 
 .bg-main-page {
     background-image: url("../images/decor_m-min.png");
@@ -30,4 +39,5 @@
     background-image: url('../images/decor_d-2x-min.png');
   }
 }
+
 
