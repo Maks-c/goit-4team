@@ -63,7 +63,7 @@
 .footer-address_item {
   margin-top: 8px;
 }
-@media screen and (min-width: 320px) and (max-width: 1443px) {
+@media screen and (min-width: 320px) and (max-width: 1439px) {
   .logo_footer {
     margin: 0 auto;
     margin-bottom: 19px;
@@ -77,17 +77,6 @@
     display: flex;
     justify-content: space-between;
   }
-  .footer-nav {
-    display: inline-flex;
-  }
-
-  .social-link {
-    display: inline-flex;
-  }
-  .footer-address {
-    display: inline-flex;
-  }
-
   .social-nav {
     text-align: start;
     margin-top: 0;
@@ -102,7 +91,7 @@
     text-align: end;
   }
 }
-@media screen and (min-width: 1444px) {
+@media screen and (min-width: 1440px) {
   .footer {
     padding-top: 30px;
     padding-bottom: 30px;
