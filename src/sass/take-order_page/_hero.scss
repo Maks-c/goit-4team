@@ -284,6 +284,11 @@
   .button {
     margin-bottom: 76px;
   }
+  img {
+    display: block;
+    height: auto;
+    max-width: none;
+  }
 }
 /*-Контейнер для обмеження контенту desktop-версії-*/
 @media screen and (min-width: 1440px) {
@@ -299,7 +304,6 @@
   .hero__page_oder-blok {
     display: flex;
     flex-direction: column;
-    align-items: center;
   }
   .hero__page_oder-text1,
   .hero__page_oder-text2 {
@@ -333,6 +337,7 @@
     flex-direction: column;
     margin-bottom: -50px;
     margin-right: 189px;
+
     text-align: right;
   }
   .page-oder__list {
@@ -415,7 +420,16 @@
     text-align: right;
     color: var(--primary-text-color);
   }
+  // .hero__page-oder-pic {
+  //   width: 515px;
+  // }
+  img {
+    display: block;
+    height: auto;
+    max-width: none;
+  }
 }
+
 @media screen and (max-width: 1339px) {
   .page-oder__pic2 {
     display: none;
