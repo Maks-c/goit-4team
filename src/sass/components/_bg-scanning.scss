@@ -1,0 +1,35 @@
+.bg-3dscanning-page {
+    background-image: url('/images/scaning/scan_bg-decor-m.jpg');
+    background-size: 100% 100%;
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    top: 0;
+    left: 0;
+  
+    @media (min-device-pixel-ratio: 2) and (min-width: 280px),
+      (min-resolution: 192dpi) and (min-width: 280px),
+      (min-resolution: 2dppx) and (min-resolution: 280px) {
+      background-image: url('/images/scaning/scan_bg-decor-m@2x.jpg');
+    }
+  
+    @media screen and (min-width: 768px) {
+      background-image: url('/images/scaning/scan_bg-decor-t.jpg');
+    }
+  
+    @media (min-device-pixel-ratio: 2) and (min-width: 768px),
+      (min-resolution: 192dpi) and (min-width: 768px),
+      (min-resolution: 2dppx) and (min-resolution: 768px) {
+      background-image: url('/images/scaning/scan_bg-decor-t@2x.jpg');
+    }
+  
+    @media screen and (min-width: 1440px) {
+      background-image: url('/images/scaning/scan_bg-decor-d.jpg');
+    }
+  
+    @media (min-device-pixel-ratio: 2) and (min-width: 1440px),
+      (min-resolution: 192dpi) and (min-width: 1440px),
+      (min-resolution: 2dppx) and (min-resolution: 1440px) {
+      background-image: url('/images/scaning/scan_bg-decor-d@2x.jpg');
+    }
+  }
