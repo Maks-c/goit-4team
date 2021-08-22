@@ -1,7 +1,5 @@
 .section-betwent {
   padding-bottom: 52px;
-  padding-left: 13px;
-  padding-right: 13px;
 }
 .title-creative {
   margin-bottom: 16px;
@@ -32,25 +30,25 @@ ul {
 .crative-list__item:not(:last-child) {
   margin-bottom: 16px;
 }
-.box-transmishen {
-  padding-top: 32px;
-  @media screen and (min-width: 768px) {
-    padding: 0px;
-    position: absolute;
-    bottom: 53px;
-    z-index: -1;
-    left: 443px;
-  }
-  @media screen and (min-width: 1440px) {
-    bottom: 0px;
-    right: 189px;
-  }
-}
+
 .box-for-ul {
   @media screen and (min-width: 768px) {
-    position: relative;
+    position: absolute;
   }
 }
+
+.img-tansmashine {
+  display: inline-block;
+  @media screen and (min-width: 768px) {
+    position: relative;
+    left: 409px;
+  }
+  @media screen and (min-width: 1444px) {
+    left: 572px;
+    bottom: 125px;
+  }
+}
+
 .crative-list__item {
   position: relative;
 }
@@ -66,8 +64,8 @@ ul {
 }
 .crative-list {
   padding-left: 15px;
-  @media screen and (min-width: 768px) {
-    // position: absolute;
+  @media screen and (max-width: 768px) {
+    padding-bottom: 32px;
   }
 }
 

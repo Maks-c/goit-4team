@@ -1,16 +1,8 @@
 .section-we-made {
-  padding-left: 13px;
-  padding-right: 13px;
   padding-bottom: 75px;
-  @media screen and (min-width: 768px) {
-    padding-bottom: 76px;
-    padding-left: 50px;
-    padding-right: 50px;
-  }
+
   @media screen and (min-width: 1444px) {
     padding-bottom: 100px;
-    padding-right: 174px;
-    padding-left: 174px;
   }
 }
 .our-creative {
@@ -31,7 +23,7 @@
   @media screen and (min-width: 1444px) {
     font-size: 36px;
     line-height: 1.25;
-    margin-bottom: 100px;
+    margin-bottom: 52px;
   }
 }
 
