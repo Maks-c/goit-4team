@@ -118,6 +118,7 @@
   width: 100%;
   height: 199px;
   margin-bottom: 4px;
+  margin-top: 4px;
   resize: none;
   font-family: var(--primary-font-family);
   font-style: normal;
@@ -147,6 +148,19 @@
   line-height: 20px;
   color: #cdcdcd;
 }
+// skrepka
+.paper-clip-icon {
+  position: absolute;
+  width: 22px;
+  height: 20px;
+  left: 85%;
+  top: 80%;
+  cursor: pointer;
+}
+.page-oder__form-message {
+  position: relative;
+}
+
 /*-Контейнер для обмеження контенту tablet-версії-*/
 @media screen and (min-width: 768px) and (max-width: 1439px) {
   .page-oder__form {
@@ -170,14 +184,17 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    // margin-right: 60px;
-    // margin-left: 60px;
   }
   .page-oder__message {
     margin-top: 4px;
   }
   .button {
     margin: 44px 0 76px 0;
+  }
+  // skrepka
+  .paper-clip-icon {
+    left: 90%;
+    top: 80%;
   }
 }
 @media screen and (min-width: 1440px) {
@@ -186,6 +203,7 @@
     height: 56px;
 
     margin-left: 330px;
+    margin-bottom: 0;
   }
   .page-oder__form-section {
     display: flex;
@@ -207,11 +225,19 @@
     color: var(--secondary-text-color);
   }
   .page-oder__form-message {
-    padding-left: 25px;
+    // padding-left: 25px;
     padding-top: 22px;
+  }
+  .page-oder__message {
+    margin-top: 4px;
   }
   .page-oder__conteiner {
     display: flex;
     justify-content: space-between;
+  }
+  // skrepka
+  .paper-clip-icon {
+    left: 91%;
+    top: 80%;
   }
 }
