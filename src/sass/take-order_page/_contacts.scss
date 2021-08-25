@@ -76,19 +76,17 @@
   .page-oder__contacts-email,
   .page-oder__contacts-time {
     text-align: inherit;
-    font-family: Cera Pro;
+    font-family: var(--primary-font-family);
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
     line-height: 20px;
-    /* identical to box height, or 125% */
-
     text-transform: capitalize;
 
     color: #2b2b2b;
   }
   .page-oder__contacts-item {
-    font-family: Cera Pro;
+    font-family: var(--primary-font-family);
     font-style: normal;
     font-weight: bold;
     font-size: 24px;
@@ -102,24 +100,59 @@
   }
 }
 @media screen and (min-width: 1440px) {
+  .page-oder__contacts-list {
+    margin-bottom: 76px;
+  }
+
   .page-oder__pic2 {
-    width: 538px;
-    height: 394px;
     margin-right: 90px;
-    margin-left: 70px;
+    margin-left: 30px;
+
     filter: drop-shadow(20px 20px 80px rgba(0, 0, 0, 0.25));
   }
   .page-oder__contacts {
     display: flex;
     float: right;
     flex-direction: column;
-    margin-bottom: -50px;
+    // margin-bottom: -50px;
     margin-right: 189px;
 
     text-align: right;
   }
+  .page-oder__contacts-item {
+    margin-bottom: 18px;
+    font-family: var(--primary-font-family);
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 45px;
+    text-align: right;
+
+    color: #487996;
+  }
+
   .page-oder__list {
     display: block;
+  }
+  .page-oder__contacts-phone,
+  .page-oder__contacts-email,
+  .page-oder__contacts-time {
+    margin-bottom: 18px;
+    font-family: Cera Pro;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 20px;
+    text-align: right;
+    text-transform: capitalize;
+
+    color: #2b2b2b;
+  }
+  // .page-oder__contacts-time {
+  //
+  // }
+  .days {
+    display: inline;
   }
 }
 @media screen and (max-width: 1339px) {
