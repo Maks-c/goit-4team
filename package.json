@@ -26,6 +26,7 @@
     "sass": "^1.37.5"
   },
   "dependencies": {
-    "fonts": "0.0.2"
+    "fonts": "0.0.2",
+    "jquery": "^3.6.0"
   }
 }
