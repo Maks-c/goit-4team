@@ -1,0 +1,230 @@
+//CONTACT FORM//
+
+.contact__details__head {
+  font-family: var(--primary-font-family);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 23px;
+  color: var(--secondary-text-color);
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.contact__form-group__label {
+  display: flex;
+  flex-direction: column;
+
+  font-family: var(--primary-font-family);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+
+  text-transform: capitalize;
+
+  color: var(--primary-text-color);
+  margin-bottom: 44px;
+}
+
+.contact__form-group__label-last {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  font-family: var(--primary-font-family);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+
+  text-transform: capitalize;
+
+  color: var(--primary-text-color);
+  margin-bottom: 4px;
+}
+
+.contact__form-group__input {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid var(--secondary-text-color);
+  background-color: unset;
+}
+.contact__form-group__input:hover {
+  background-color: unset;
+}
+
+.contact__form-group__input::placeholder {
+  font-family: var(--primary-font-family);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: capitalize;
+  color: var(--primary-text-color);
+}
+
+.contact__form-group__textarea {
+  border: 1px solid var(--secondary-text-color);
+  border-radius: 50px 0px;
+  height: 199px;
+  resize: none;
+  padding-top: 22px;
+  padding-left: 20px;
+}
+
+.contact__form-group__textarea::placeholder {
+  font-family: var(--primary-font-family);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  color: #cdcdcd;
+}
+
+.contact__details__conditions {
+  font-family: var(--primary-font-family);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  color: #cdcdcd;
+}
+
+.contact__details__conditions-displey-none {
+  display: none;
+}
+
+.main-button {
+  display: block;
+  width: 280px;
+  margin: 24px auto 52px auto;
+}
+
+.paper-clip-icon {
+  position: absolute;
+  bottom: 18px;
+  right: 19px;
+
+  width: 21px;
+  height: 20px;
+}
+
+//TABLET//
+@media screen and (min-width: 768px) {
+  .contact__details__head {
+    font-size: 24px;
+    line-height: 30px;
+    margin-bottom: 7px;
+  }
+
+  .contact__form-group {
+    width: 420px;
+    margin: 0 auto;
+  }
+
+  .main-button {
+    display: block;
+    width: 177px;
+
+    margin-top: 44px;
+    margin-bottom: 76px;
+    margin-right: 0%;
+  }
+}
+
+//DESKTOP//
+@media screen and (min-width: 1440px) {
+  .contact__form-group {
+    width: 515px;
+  }
+
+  .contact__form-group__input {
+    margin-top: 8px;
+  }
+
+  .form__email {
+    margin-top: 0;
+  }
+
+  .contact__form__container {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    margin-top: 100px;
+  }
+
+  .contact__address-list {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contact__details__head {
+    font-size: 36px;
+    line-height: 45px;
+    margin-bottom: 16px;
+  }
+
+  .contact__address-list__text {
+    font-size: 36px;
+    line-height: 45px;
+  }
+
+  .contact__form-group__label-last {
+    font-size: 18px;
+    line-height: 20px;
+
+    margin-bottom: 4px;
+  }
+  .contact__form-group__textarea::placeholder {
+    font-size: 18px;
+    line-height: 20px;
+  }
+  .contact__details__conditions {
+    display: none;
+  }
+
+  .contact__details__conditions-displey-none {
+    display: inline;
+    font-family: var(--primary-font-family);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 20px;
+    color: #cdcdcd;
+  }
+
+  .contact__form-group__input::placeholder {
+    font-size: 18px;
+    line-height: 20px;
+  }
+  .contact__form-group__textarea {
+    margin-top: 4px;
+  }
+  .contact__form-group__label {
+    font-size: 18px;
+    line-height: 20px;
+  }
+  .contact__address-list__link {
+    font-size: 18px;
+    line-height: 20px;
+  }
+  .contact__form-group__label-last {
+    font-size: 18px;
+    line-height: 20px;
+    margin-bottom: 4px;
+  }
+  .contact__address-list__link:not(:last-child) {
+    margin-bottom: 27px;
+  }
+
+  .main-button {
+    margin-top: 24px;
+    margin-bottom: 0px;
+  }
+  .contact__address-list__text-time-carryover {
+    display: none;
+  }
+}
+
+//END CONTACT FORM//
