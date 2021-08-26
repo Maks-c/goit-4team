@@ -2,14 +2,7 @@
 .hero__page-oder-container {
   padding-top: 32px;
 }
-.hero__page-oder {
-  // padding-right: 20px;
-  // padding-left: 20px;
-  background-image: url(../images/take-order/decor_t.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
+
 .hero__item-page-oder {
   margin-bottom: 16px;
   font-family: var(--primary-font-family);
@@ -41,11 +34,8 @@
   margin-bottom: 52px;
 }
 
-/* .modal-form__message:focus {
-  border-color: var(--accent-color);
-  outline: none;
-} */
 /*-Контейнер для обмеження контенту tablet-версії-*/
+
 @media screen and (min-width: 768px) and (max-width: 1439px) {
   .hero__page-oder-container {
     padding-right: 0;
@@ -70,7 +60,6 @@
     display: flex;
     flex-direction: column;
     margin-left: 20px;
-    // margin-right: 60px;
   }
   .hero__page_oder-text2 {
     margin-bottom: 0;
@@ -81,10 +70,10 @@
     padding-left: 60px;
     padding-top: 35px;
     padding-bottom: 76px;
-    background-image: url(../images/decor_t-min.png);
+
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
+    background-size: contain;
   }
 
   img {
@@ -100,7 +89,7 @@
     padding-left: 189px;
     padding-top: 24px;
 
-    background-image: url(../images/decor_d-min.png);
+    background-image: url(../images/take-order/decor_d.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -111,7 +100,6 @@
   }
   .hero__page_oder-text1,
   .hero__page_oder-text2 {
-    // max-width: 100%;
     font-family: var(--primary-font-family);
     font-style: normal;
     font-weight: 300;
@@ -145,15 +133,7 @@
     max-width: 100%;
     margin-bottom: 0;
   }
-  // .container {
-  //   max-width: 100%;
-  //   margin-left: auto;
-  //   margin-right: auto;
-  // }
 
-  // .hero__page-oder-pic {
-  //   width: 515px;
-  // }
   img {
     display: block;
     height: auto;

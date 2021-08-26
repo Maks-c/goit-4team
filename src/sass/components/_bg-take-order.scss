@@ -1,0 +1,28 @@
+.hero__page-oder {
+  background-image: url(../images/take-order/decor_m.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+
+  @media (min-device-pixel-ratio: 2) and (min-width: 280px),
+    (min-resolution: 192dpi) and (min-width: 280px),
+    (min-resolution: 2dppx) and (min-resolution: 280px) {
+    background-image: url(../images/take-order/decor_m.png);
+  }
+  @media screen and (min-width: 768px) {
+    background-image: url(../images/take-order/decor_t.png);
+  }
+  @media (min-device-pixel-ratio: 2) and (min-width: 768px),
+    (min-resolution: 192dpi) and (min-width: 768px),
+    (min-resolution: 2dppx) and (min-resolution: 768px) {
+    background-image: url(../images/take-order/decor_t.png);
+  }
+  @media screen and (min-width: 1440px) {
+    background-image: url(../images/take-order/decor_d.png);
+  }
+  @media (min-device-pixel-ratio: 2) and (min-width: 1440px),
+    (min-resolution: 192dpi) and (min-width: 1440px),
+    (min-resolution: 2dppx) and (min-resolution: 1440px) {
+    background-image: url(../images/take-order/decor_d.png);
+  }
+}
