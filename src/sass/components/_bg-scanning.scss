@@ -1,12 +1,10 @@
 .bg-3dscanning-page {
     background-image: url('/images/scaning/scan_bg-decor-m.jpg');
-    background-size: 100% 100%;
-    position: absolute;
-    z-index: -1;
-    width: 100%;
-    top: 0;
-    left: 0;
-  
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: -5;  
     @media (min-device-pixel-ratio: 2) and (min-width: 280px),
       (min-resolution: 192dpi) and (min-width: 280px),
       (min-resolution: 2dppx) and (min-resolution: 280px) {

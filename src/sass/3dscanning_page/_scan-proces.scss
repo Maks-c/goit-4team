@@ -1,6 +1,5 @@
 .scaning__section-process {
-  padding-left: 13px;
-  padding-right: 13px;
+padding-top: 24px;
 }
 .scaning__section-process-title {
   font-family: var(--primary-font-family);
@@ -47,8 +46,7 @@
 }
 @media screen and (min-width: 768px) and (max-width: 1439px) {
   .scaning__section-process {
-    padding-left: 53px;
-    padding-right: 53px;
+  padding-top: 52px;
   }
   .scaning__section-process-title {
     font-size: 24px;
@@ -72,8 +70,7 @@
 }
 @media screen and (min-width: 1440px) {
   .scaning__section-process {
-    padding-left: 174px;
-    padding-right: 174px;
+    padding-top: 100px;
   }
   .scaning__section-process-title {
     font-size: 36px;
@@ -90,7 +87,7 @@
   .scanning__process-list-item {
     max-width: 250px;
     height: 298px;
-    margin: 20px;
+    margin: 0px;
     padding-left: 0px;
     padding-right: 0px;
   }
