@@ -1,9 +1,11 @@
 /****** HERO*****/
-
+.hero__page-oder-container {
+  padding-top: 32px;
+}
 .hero__page-oder {
   // padding-right: 20px;
   // padding-left: 20px;
-  background-image: url(../images/decor_m-min.png);
+  background-image: url(../images/take-order/decor_t.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -13,7 +15,7 @@
   font-family: var(--primary-font-family);
   font-style: normal;
   font-weight: bold;
-  font-size: 24px;
+  font-size: 23px;
   line-height: 30px;
 
   color: var(--secondary-text-color);

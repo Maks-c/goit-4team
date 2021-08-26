@@ -58,78 +58,96 @@
     <div class="page-oder__conteiner">
       <div class="page-oder__form-section">
         <div class="page-oder__form-conteiner">
-          <form action="#" class="page-oder__form">
+          <form class="page-oder__form" name="page-oder__form">
             <h2 class="page-oder__form-item">ЗВ’ЯЖІТЬСЯ З НАМИ</h2>
 
-            <label class="page-oder__form-field page-oder__form-field-name" for="fname"> </label>
+            <div class="oder-form__input oder-form__input--wrap">
+              <input
+                name="oder-name"
+                id="oder-name"
+                type="text"
+                required
+                minlength="2"
+                placeholder=" "
+              />
+              <label for="oder-name" class="oder-form__label">Ім’я</label>
+            </div>
+            <div class="oder-form__input oder-form__input--wrap">
+              <input
+                name="oder-mail"
+                id="oder-mail"
+                type="email"
+                required
+                minlength="2"
+                placeholder=" "
+              />
+              <label for="oder-mail" class="oder-form__label">Email</label>
+            </div>
 
-            <input
-              class="page-oder__form-input page-oder__form-input-name"
-              type="text"
-              placeholder="Ім’я"
-              id="fname"
-              name="fname"
-              required
-            />
+            <div class="select-box">
+              <ul class="options-container1 select-box__list">
+                <li class="option1 select-box__item">
+                  <input type="radio" class="radio" id="300" name="plastic" value="300" />
+                  <label for="300">300 мікрон</label>
+                </li>
+                <li class="option1 select-box__item">
+                  <input type="radio" class="radio" id="200" name="plastic" value="200" />
+                  <label for="200">200 мікрон</label>
+                </li>
+                <li class="option1 select-box__item">
+                  <input type="radio" class="radio" id="100" name="plastic" value="100" />
+                  <label for="100">100 мікрон</label>
+                </li>
+                <li class="option1 select-box__item">
+                  <input type="radio" class="radio" id="support" name="plastic" value="support" />
+                  <label for="support">Труднощі у виборі - ми допоможемо</label>
+                </li>
+              </ul>
+              <p class="selected1 select-form__subtitle">Види пластика</p>
+            </div>
+            <div class="select-box">
+              <ul class="options-container2 select-box__list">
+                <li class="option2 select-box__item">
+                  <input type="radio" class="radio" id="400" name="quality" value="hight" />
+                  <label for="400">Висока</label>
+                </li>
+                <li class="option2 select-box__item">
+                  <input type="radio" class="radio" id="500" name="quality" value="medium" />
+                  <label for="500">Середня</label>
+                </li>
+                <li class="option2 select-box__item">
+                  <input type="radio" class="radio" id="600" name="quality" value="low" />
+                  <label for="600">Низька</label>
+                </li>
+                <li class="option2 select-box__item">
+                  <input type="radio" class="radio" id="suppor" name="quality" value="support" />
+                  <label for="suppor">Труднощі у виборі - ми допоможемо</label>
+                </li>
+              </ul>
+              <p class="selected2 select-form__subtitle">Якість друку</p>
+            </div>
 
-            <label class="page-oder__form-field page-oder__form-field-email" for="email"></label>
-            <input
-              class="page-oder__form-input page-oder__form-input-email"
-              type="text"
-              placeholder="Email"
-              id="email"
-              name="email"
-              required
-            />
-
-            <label class="page-oder__form-field page-oder__form-field-plastic" for="plastik">
-              <span
-                ><svg class="page-oder__icon-polygon1" width="19" height="13">
-                  <use href="./images/take-order/sprit.svg#icon-Polygon-3-1"></use>
-                </svg>
-              </span>
-            </label>
-
-            <input
-              class="page-oder__form-input page-oder__form-input-plastic"
-              type="text"
-              placeholder="Види пластика"
-              id="plastik"
-              name="plastik"
-              required
-            />
-
-            <label class="page-oder__form-field page-oder__form-field-print" for="print">
-              <span
-                ><svg class="page-oder__icon-polygon1" width="19" height="13">
-                  <use href="./images/take-order/sprit.svg#icon-Polygon-3-1"></use>
-                </svg>
-              </span>
-            </label>
-            <input
-              class="page-oder__form-input page-oder__form-input-print"
-              type="text"
-              placeholder="Якість друку"
-              id="print"
-              name="print"
-              required
-            />
-
-            <label class="page-oder__form-field page-oder__form-field-color" for="color">
-              <span
-                ><svg class="page-oder__icon-polygon1" width="19" height="13">
-                  <use href="./images/take-order/sprit.svg#icon-Polygon-3-1"></use>
-                </svg>
-              </span>
-            </label>
-            <input
-              class="page-oder__form-input page-oder__color page-oder__form-input-color"
-              type="text"
-              placeholder="Колір"
-              id="color"
-              name="color"
-              required
-            />
+            <div class="select-box">
+              <ul class="options-container3 select-box__list">
+                <li class="option3 select-box__item">
+                  <input type="radio" class="radio" id="700" name="color" value="yellow" />
+                  <label for="700">Жовтий</label>
+                </li>
+                <li class="option3 select-box__item">
+                  <input type="radio" class="radio" id="800" name="color" value="blue" />
+                  <label for="800">Синій</label>
+                </li>
+                <li class="option3 select-box__item">
+                  <input type="radio" class="radio" id="900" name="color" value="black" />
+                  <label for="900">Чорний</label>
+                </li>
+                <li class="option3 select-box__item">
+                  <input type="radio" class="radio" id="suppo" name="color" value="support" />
+                  <label for="suppo">Труднощі у виборі - ми допоможемо</label>
+                </li>
+              </ul>
+              <p class="selected3 select-form__subtitle">Колір</p>
+            </div>
 
             <label class="page-oder__form-message">
               <span class="page-oder__content">Повідомлення</span>
