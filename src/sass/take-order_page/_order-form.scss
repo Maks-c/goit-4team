@@ -20,7 +20,7 @@
   overflow: hidden;
 }
 
-//***NEW FORM**//
+// FORM**//
 // section form--------------
 
 .oder-form__input {
@@ -95,7 +95,12 @@
   opacity: 1;
   transform: scaleY(1);
 }
-
+.select-box__list {
+  z-index: 1;
+}
+.select-box {
+  position: relative;
+}
 .select-box__item {
   height: 28px;
   display: flex;
@@ -191,6 +196,8 @@
   text-transform: capitalize;
 }
 
+// END FORM
+
 .button {
   width: 280px;
 
@@ -215,15 +222,16 @@
 
   color: var(--secondary-text-color);
   transition: box-shadow 300ms ease-out;
-}
-.button :hover {
-  box-shadow: -12px -12px 22px #ffffff, 12px 12px 22px rgba(24, 125, 184, 0.1),
-    7px 7px 22px rgba(35, 76, 99, 0.25), -7px -7px 12px #ffffff;
-}
 
-.button :focus {
-  box-shadow: -12px -12px 22px #ffffff, 12px 12px 22px rgba(23, 26, 27, 0.1),
-    7px 7px 22px rgba(2, 25, 37, 0.25), -7px -7px 12px #ffffff;
+  &:hover {
+    box-shadow: -12px -12px 22px #ffffff, 12px 12px 22px rgba(24, 125, 184, 0.1),
+      7px 7px 22px rgba(35, 76, 99, 0.25), -7px -7px 12px #ffffff;
+  }
+
+  &:focus {
+    box-shadow: -12px -12px 22px #ffffff, 12px 12px 22px rgba(23, 26, 27, 0.1),
+      7px 7px 22px rgba(2, 25, 37, 0.25), -7px -7px 12px #ffffff;
+  }
 }
 
 .button__link {
@@ -247,32 +255,7 @@
   display: flex;
   flex-direction: column;
 }
-.page-oder__form-field {
-  margin-bottom: 44px;
-}
 
-.page-oder__form-field-plastic {
-  position: relative;
-}
-.page-oder__form-field-print {
-  position: relative;
-}
-.page-oder__form-field-color {
-  position: relative;
-}
-
-.page-oder__icon-polygon1 {
-  width: 19px;
-  height: 13px;
-  position: absolute;
-  bottom: 0px;
-  right: 0px;
-  z-index: 999;
-  margin-bottom: 3px;
-}
-.page-oder__color {
-  margin-bottom: 44px;
-}
 .page-oder__form-item {
   margin-bottom: 28px;
   font-family: var(--primary-font-family);
@@ -286,8 +269,6 @@
 .page-oder__form {
   display: flex;
   flex-direction: column;
-
-  // margin-left: 40px;
 }
 
 .page-oder__form-input {
@@ -412,7 +393,6 @@
     color: var(--secondary-text-color);
   }
   .page-oder__form-message {
-    // padding-left: 25px;
     padding-top: 22px;
   }
   .page-oder__message {
