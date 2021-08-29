@@ -2,7 +2,6 @@
   background-image: url('../images/modeling/decor-mob-1x.png');
   background-size: contain;
   background-repeat: no-repeat;
-  //   background-size: cover;
 
   @media (min-device-pixel-ratio: 2) and (min-width: 280px),
     (min-resolution: 192dpi) and (min-width: 280px),
@@ -15,25 +14,24 @@
     background-image: url('../images/modeling/decor-tab-1x.png');
     background-size: 100%;
     background-position-x: center;
-    width: 768px;
   }
 
   @media (min-device-pixel-ratio: 2) and (min-width: 768px),
     (min-resolution: 192dpi) and (min-width: 768px),
     (min-resolution: 2dppx) and (min-resolution: 768px) {
     background-image: url('../images/modeling/decor-tab-2x.png');
-    background-position-x: center;
+    // background-position-x: center;
   }
 
   @media screen and (min-width: 1444px) {
     background-image: url('../images/modeling/decor-desc-1x.png');
-    background-position-x: center;
+    // background-position-x: center;
   }
 
   @media (min-device-pixel-ratio: 2) and (min-width: 1444px),
     (min-resolution: 192dpi) and (min-width: 1444px),
     (min-resolution: 2dppx) and (min-resolution: 1444px) {
     background-image: url('../images/modeling/decor-desc-2x.png');
-    background-position-x: center;
+    // background-position-x: center;
   }
 }
