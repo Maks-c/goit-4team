@@ -17,6 +17,8 @@
   font-weight: 300;
   font-size: 16px;
   line-height: 1.25;
+  position: relative;
+  z-index: +1;
 }
 .scaning__section-list-item {
   margin-bottom: 16px;
@@ -35,7 +37,7 @@
     display: block;
     max-width: 515px;
   }
-  .container {
+  .container__section-hero {
     position: relative;
   }
   .scaning__section-list-item:last-child {
@@ -50,7 +52,6 @@
     height: 172px;
     bottom: 25px;
     right: -60px;
-    z-index: -1;
     margin-top: 0px;
     margin-bottom: 0px;
   }
@@ -63,7 +64,7 @@
     font-size: 48px;
     margin-bottom: 24px;
   }
-  .container {
+  .container__section-hero {
     position: relative;
   }
   .scaning__section-hero-picture {
@@ -72,7 +73,6 @@
     height: 368px;
     top: 141px;
     right: 0px;
-    z-index: -1;
   }
   .scaning__section-list {
     display: flex;
