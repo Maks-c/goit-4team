@@ -1,33 +1,32 @@
 .bg-3dscanning-page {
-    background-image: url('/images/scaning/scan_bg-decor-m.jpg');
-    background-size: cover;
-    background-position: center;
+    background-image: url('/images/scaning/scan_bg-decor-m.png');
+    background-size: contain;
+    background-position-x: center;
     background-repeat: no-repeat;
-    position: relative;
-    z-index: -5;  
+    
     @media (min-device-pixel-ratio: 2) and (min-width: 280px),
       (min-resolution: 192dpi) and (min-width: 280px),
       (min-resolution: 2dppx) and (min-resolution: 280px) {
-      background-image: url('/images/scaning/scan_bg-decor-m@2x.jpg');
+      background-image: url('/images/scaning/scan_bg-decor-m@2x.png');
     }
   
     @media screen and (min-width: 768px) {
-      background-image: url('/images/scaning/scan_bg-decor-t.jpg');
+      background-image: url('/images/scaning/scan_bg-decor-t.png');
     }
   
     @media (min-device-pixel-ratio: 2) and (min-width: 768px),
       (min-resolution: 192dpi) and (min-width: 768px),
       (min-resolution: 2dppx) and (min-resolution: 768px) {
-      background-image: url('/images/scaning/scan_bg-decor-t@2x.jpg');
+      background-image: url('/images/scaning/scan_bg-decor-t@2x.png');
     }
   
     @media screen and (min-width: 1440px) {
-      background-image: url('/images/scaning/scan_bg-decor-d.jpg');
+      background-image: url('/images/scaning/scan_bg-decor-d.png');
     }
   
     @media (min-device-pixel-ratio: 2) and (min-width: 1440px),
       (min-resolution: 192dpi) and (min-width: 1440px),
       (min-resolution: 2dppx) and (min-resolution: 1440px) {
-      background-image: url('/images/scaning/scan_bg-decor-d@2x.jpg');
+      background-image: url('/images/scaning/scan_bg-decor-d@2x.png');
     }
   }
