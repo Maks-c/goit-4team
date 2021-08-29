@@ -2,7 +2,7 @@
   padding-bottom: 52px;
   @media screen and (min-width: 768px) {
     padding-top: 0px;
-    }
+  }
   @media screen and (min-width: 1440px) {
     padding-bottom: 100px;
   }
@@ -55,10 +55,11 @@
     margin-top: 56px;
   }
 }
-.gallery__item:not(:first-child){
-  @media screen and (max-width: 767px){
-  margin-top: 24px;
-}}
+.gallery__item:not(:first-child) {
+  @media screen and (max-width: 767px) {
+    margin-top: 24px;
+  }
+}
 .container--pack {
   flex-grow: 1;
   border: none;
@@ -91,6 +92,6 @@
 
 img {
   display: block;
-  width: 100%;
+  // width: 100%;
   height: auto;
 }
