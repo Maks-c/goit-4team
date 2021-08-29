@@ -1,0 +1,1 @@
+{"version":3,"sources":["js/more-photo--slider.js"],"names":["$","slick"],"mappings":";AAAAA,EAAE,gBAAgBC","file":"more-photo--slider.ebce180f.js","sourceRoot":"../src","sourcesContent":["$('.single-item').slick();"]}
