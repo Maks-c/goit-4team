@@ -1,8 +1,8 @@
 <!--CONTACT-->
 <section class="contact">
-    <div class="container contact__container">
+    <div class="container">
         <h1 class="contact__title">КОНТАКТИ</h1>
-        <div class="contact_hero_iframe-container">
+        <div class="contact__hero_iframe-container">
             <div class="contact__hero_iframe">
             <iframe src="https://www.youtube.com/embed/X_oiyl6fNsM" title="YouTube video player"
             frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -28,6 +28,7 @@
             </ul>
         </div>
         </div>
+        
         <div class="contact__form__container">
             <form class="contact__form">
                 <div class="contact__form-group">
@@ -41,25 +42,29 @@
 
                         <input class="contact__form-group__input form__email" placeholder="Email" type="email" name="email" />
                     </label>
-                    <label class="contact__form-group__label-last">
+
+                    <!-- code Misha-->
+
+                    <label class="page-oder__form-message"> 
+                        
                         Повідомлення
-                        <textarea class="contact__form-group__textarea" name="feedback" rows="5"
-                            placeholder="Залишіть своє повідомлення"></textarea>
-
-
-    <svg class="paper-clip-icon">
-        <use xlink:href="./images/take-order/sprit.svg#icon-simple-line-icons_paper-clip-1"></use>
-    </svg>
-
-                            <svg class="paper-clip-icon">
-                                <use xlink:href="./images/take-order/sprit.svg#icon-simple-line-icons_paper-clip-1"></use>
-                            </svg>
+                        <textarea name="user-message" class="page-oder__message" placeholder="Залишіть своє повідомлення">
+                        </textarea>
                     </label>
 
-                    <p class="contact__details__conditions">*Прикріпіть зображення / креслення / STL / Obj /
-                        CAD-модель</p>
-
-                    <p class="contact__details__conditions-displey-none">*Прикріпіть зображення/креслення/STL/Obj/CAD-модель</p>
+                    <label>
+                        <input type="file" id="file-uploader" class="visually-hidden" />
+                        <svg class="paper-clip-icon-pos">
+                            <use xlink:href="./images/take-order/sprit.svg#icon-simple-line-icons_paper-clip-1"></use>
+                        </svg>
+                    </label>
+                    
+                    <p class="page-oder__form-message-text">
+                        *Прикріпіть зображення / креслення / STL / Obj / CAD-модель
+                    </p>
+                    <p class="contact__details__conditions-displey-none">
+                        *Прикріпіть зображення/креслення/STL/Obj/CAD-модель
+                    </p>
 
                     <button class="main-button" type="submit">ВІДПРАВИТИ</button>
                     

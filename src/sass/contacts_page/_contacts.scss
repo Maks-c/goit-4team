@@ -1,49 +1,49 @@
 //CONTACT//
 
-.contact__address-list__text {
-  font-family: var(--primary-font-family);
-  font-style: normal;
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 23px;
-  color: var(--secondary-text-color);
-  margin-bottom: 8px;
-}
+@media screen and (min-width: 320px) {
+  .contact__address-list__text {
+    font-family: var(--primary-font-family);
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 23px;
+    color: var(--secondary-text-color);
+    margin-bottom: 8px;
+  }
 
-.contact__address-list__link {
-  display: block;
-  font-family: var(--primary-font-family);
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 20px;
-  text-transform: capitalize;
+  .contact__address-list__link {
+    display: block;
+    font-family: var(--primary-font-family);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: capitalize;
 
-  color: var(--primary-text-color);
-}
+    color: var(--primary-text-color);
+  }
 
-.contact__address-list__link:not(:last-child) {
-  margin-bottom: 8px;
-}
+  .contact__address-list__link:not(:last-child) {
+    margin-bottom: 8px;
+  }
 
-.contact__address-list__text-time {
-  font-family: var(--primary-font-family);
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 20px;
+  .contact__address-list__text-time {
+    font-family: var(--primary-font-family);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: capitalize;
+    color: var(--primary-text-color);
+  }
 
-  text-transform: capitalize;
+  .contact__address-list__text-time:not(:last-child) {
+    margin-bottom: 8px;
+  }
 
-  color: var(--primary-text-color);
-}
-
-.contact__address-list__text-time:not(:last-child) {
-  margin-bottom: 8px;
-}
-
-.contact__address-list__item:not(:last-child) {
-  margin-bottom: 24px;
+  .contact__address-list__item:not(:last-child) {
+    margin-bottom: 24px;
+  }
 }
 
 //TABLET//
