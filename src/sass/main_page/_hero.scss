@@ -7,16 +7,34 @@
   margin: 0 auto;
   @media screen and (min-width: 768px) {
     padding-top: 44px;
-    padding-right: 164px;
-    // padding-left: 164px;
+    
   }
   @media screen and (min-width: 1440px) {
     padding-top: 12px;
-    padding-right: 361px;
-    padding-left: 361px;
     padding-bottom: 100px;
   }
 }
+.hero__container{
+  margin-left: auto;
+  margin-right: auto;
+  @media screen and (min-width: 320px) and (max-width: 767px) {
+    width: 320px;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1440px) {
+    width: 400px;
+    padding-right: 10px;
+    padding-left: 10px;
+    position: relative;
+  }
+  @media screen and (min-width: 1440px) {
+    width: 638px;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}
+
 .hero__title {
   font-family: Caviar Dreams;
   font-style: Regular;
@@ -53,14 +71,18 @@
   @media screen and (min-width: 768px) {
     font-size: 18px;
     margin-top: 64px;
-    position: relative;
+    
   }
   @media screen and (min-width: 1440px) {
     font-size: 36px;
     margin-top: 100px;
   }
 }
-
+.arrov--none{
+  @media screen and (max-width: 767px) {
+  display: none;
+}
+}
 .hero__svg--arrow {
   visibility: hidden;
   opacity: 0;
@@ -68,11 +90,15 @@
     visibility: visible;
     opacity: 1;
     position: absolute;
-    left: 150px;
+    width: 16px;
+    left: -50px;
+    top: 215px;
     transition: transform 1250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   @media screen and (min-width: 1440px) {
-    left: 200px;
+    width: 18px;
+    left: -160px;
+    top: 480px;
     transition: transform 1250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
@@ -83,29 +109,29 @@
 }
 .hero__list {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+  
 }
 
 .hero__img--robot {
   border-top-right-radius: 25%;
   box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.3);
-  margin-right: 35px;
+    
 }
 .hero__img--robot:hover,
 .hero__img--robot:focus {
-  transform: scale(1.25);
+  transform: scale(0.8);
   transition: transform 780ms ease-in-out 800ms;
 }
 
 .hero__img--lamps {
   border-radius: 50%;
   box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.3);
-  margin-right: 35px;
+    
 }
 .hero__img--lamps:hover,
 .hero__img--lamps:focus {
-  transform: scale(1.25);
   transition: transform 780ms;
   transform: rotate(360deg);
 }
@@ -113,9 +139,10 @@
   border-top-right-radius: 25%;
   border-bottom-left-radius: 25%;
   box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.3);
+  
 }
 .hero__img--head:hover,
 .hero__img--head:focus {
-  transform: scale(1.25);
+  transform: scale(0.8);
   transition: transform 780ms cubic-bezier(0.27, 0.51, 0.55, 0.61);
 }
