@@ -1,8 +1,8 @@
 .bg-contact-page {
   background-image: url('../images/contact/decor_m.png');
-  background-size: cover;
+  // background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position-x: center;
 
   @media (min-device-pixel-ratio: 2) and (min-width: 320px),
     (min-resolution: 192dpi) and (min-width: 320px),

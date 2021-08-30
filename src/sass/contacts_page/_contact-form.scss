@@ -48,14 +48,30 @@
     color: var(--primary-text-color);
   }
 
-  .page-oder__form-message {
+  .page-oder__message {
+    width: 100%;
+    height: 199px;
+    margin-bottom: 4px;
+    margin-top: 4px;
+    resize: none;
     font-family: var(--primary-font-family);
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
     line-height: 20px;
-    text-transform: capitalize;
-    color: var(--primary-text-color);
+    color: #cdcdcd;
+    border: 1px solid var(--secondary-text-color);
+    box-sizing: border-box;
+    border-radius: 50px 0px;
+    padding-left: 20px;
+    padding-top: 22px;
+
+    &::placeholder {
+      color: #cdcdcd;
+    }
+    &:focus {
+      outline: none;
+    }
   }
 
   .contact__details__conditions-displey-none {
@@ -178,6 +194,11 @@
   }
 
   .page-oder__form-message {
+    font-size: 18px;
+    line-height: 20px;
+  }
+
+  .page-oder__message {
     font-size: 18px;
     line-height: 20px;
   }
